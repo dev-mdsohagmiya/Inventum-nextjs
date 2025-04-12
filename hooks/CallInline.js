@@ -1,7 +1,8 @@
 "use client"
+import SectionTitle from "@/components/ui/SectionTitle";
 import { useEffect, useState } from "react";
 import { InlineWidget, useCalendlyEventListener,  } from "react-calendly";
-import SectionTitle from "../landing-pages/components/ui/SectionTitle";
+
 function isCalendlyEvent(e) {
   return e.data.event && e.data.event.indexOf("calendly") === 0;
 }
