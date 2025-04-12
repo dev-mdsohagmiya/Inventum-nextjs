@@ -1,0 +1,666 @@
+[
+    {
+        "name": "Accounting",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FAccounting.webp?alt=media&token=9f1802c8-471d-4a53-9c5f-491817b70b51&_gl=1*1ou9vou*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTIwNDEuMjAuMC4w",
+        "pdf":"https://drive.google.com/file/d/16pS8OQyRRq9EzoTqi3ZsSKdWY01wy7fb/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1 - Multiple Choice",
+                "time": "1 hour", 
+                "p": "Questions are based on sections 1 and 2 of the subject content"
+            },
+            "Card2": {
+                "title": "Paper 2 - Fundamentals of Accounting",
+                "time": "1 hour 45 minutes",
+                "p": "Questions are based on sections 1 and 2 of the subject content"
+            },
+            "Card3": {
+                "title":"Paper 3 - Financial Accounting",
+                "time": "1 hour 30 minutes", 
+                "p":"Questions are based on section 3 of the subject content; knowledge of material from the AS Level subject content is assumed"
+            },
+            "Card4": {
+                "title": "Paper 4 - Cost and Management Accounting",
+                "time": "1 hour",
+                "p": "Questions are based on section 4 of the subject content; knowledge of material from the AS Level subject content is assumed"
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Cambridge International AS Level students study the following topics:",
+                "p": "Finaincial Accounting \n Types of business entity \n The accounting system \n Accounting for non-current assets \n Reconciliation and verification \n Preparation of financial statements \n Analysis and communication of \n accounting information \n Cost and Management Accounting \n Costs and cost behaviour \n Traditional costing methods"                
+            },
+            "A": {
+                "title":"Cambridge International A Level students study all topics in AS and A level courses",
+                "p": "Financial Accounting \n Preparation of financial statements \n Regulatory and ethical considerations \n  Business acquisition and merger \n Computerised accounting systems \n Analysis and communication of accounting information \n Cost and Management Accounting \n Activity based costing (ABC) \n Standard costing \n Budgeting and budgetary control \n Investment appraisal"
+            }
+        }
+    },
+    {
+        "name": "Biology",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FBiology.webp?alt=media&token=5a7c0a52-9f73-4cb6-8230-2fd8e2249459&_gl=1*1afnufl*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTIwNjcuNjAuMC4w",
+        "pdf":"https://drive.google.com/file/d/1PCAz92rU2iilYXi63mx_pXbi8012aO5P/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1 - Multiple Choice",
+                "time": "1 hour 15 minutes", 
+                "p": "Questions are based on sections 1 and 2 of the subject content"
+            },
+            "Card2": {
+                "title": "Paper 2-AS Level Structured Questions",
+                "time": "2 hours",
+                "p": "Questions are based on sections 1 and 2 of the subject content"
+            },
+            "Card3": {
+                "title":"Paper 3 - Advanced Practical Skills",
+                "time": "1 hour 30 minutes", 
+                "p":"Questions are based on section 3 of the subject content; knowledge of material from the AS Level subject content is assumed"
+            },
+            "Card4": {
+                "title": "Paper4 - A Level Structured Questions",
+                "time": "2 hours",
+                "p": "Questions are based on section 4 of the subject content; knowledge of material from the AS Level subject content is assumed"
+            },
+            "Card5": {
+                "title": "Paper 5 - Planning, Analysis and Evaluation",
+                "time": "1 hour 15 minutes",
+                "p": "Questions are based on section 4 of the subject content; knowledge of material from the AS Level subject content is assumed"
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidates for Cambridge International AS Level Biology study the following topics:",
+                "p": "Cell structure  \n Biological molecules  \n Enzymes  \n Cell membranes and transport  \n The mitotic cell cycle  \n Nucleic acids and protein  \n Transport in plants  \n Transport in mammals  \n Gas exchange  \n Infectious diseases  \n Immunity  \n AS Level candidates also study practical skills."                
+            },
+            "A": {
+                "title":"Candidates for Cambridge International A Level Biology study the AS topics and the following topics:",
+                "p": "Energy and respiration  \n Photosynthesis  \n Homeostasis  \n Control and coordination  \n Inheritance  \n Selection and evolution  \n Classification, biodiversity and conservation  \n Genetic technology  \n A Level candidates also study practical skills."
+            }
+        }
+    },
+    {
+        "name": "Business",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FBusiness%20studies.webp?alt=media&token=19a5e588-552e-42a5-aa98-da4bbcc1dc29&_gl=1*wu88zi*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTIwODAuNDcuMC4w",
+        "pdf":"https://drive.google.com/file/d/1AqhjrJtxD7B9pu4DdaU06HymRPII_RQ1/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1 - Business Concepts",
+                "time": "1 hour 15 minutes", 
+                "p": "Questions are based on the AS Level subject content."
+            },
+            "Card2": {
+                "title": "Paper 2 - Business Concepts 2",
+                "time": "1 hour 30 minutes",
+                "p": "Questions are based on the AS Level subject content."
+            },
+            "Card3": {
+                "title":"Paper3 - Business Decision-Making",
+                "time": "1 hour 45 minutes", 
+                "p":"Questions are based on the A Level subject content; knowledge of material from the AS Level subject content is assumed"
+            },
+            "Card4": {
+                "title": "Paper 4 - Business Strategy",
+                "time": "1 hour 15 minutes",
+                "p": "Questions are based on the A Level subject content; knowledge of material from the AS Level subject content is assumed"
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidates for Cambridge International AS Level study the AS Level topics.",
+                "p": "Business and its environment \n Human Resources Management \n Marketing \n Operations Management \n Finance and Accounting"                          
+            },
+            "A": {
+                "title":"Candidates for Cambridge International A Level study all topics.",
+                "p": "Business and its environment \n Human Resources Management \n Marketing \n Operations Management \n Finance and Accounting"
+            }
+        }
+    },
+    {
+        "name": "Chemistry",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FChemistry.webp?alt=media&token=85774e51-e6b8-4949-b196-99d1c46976d6&_gl=1*1ygiycx*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTIwOTMuMzQuMC4w",
+        "pdf":"https://drive.google.com/file/d/1hA4JggV6aZwu9ZzxymOgf6lietdz3Af7/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1 - Multiple Choice",
+                "time": "1 hour 15 minutes", 
+                "p": "Questions are based on the AS Level syllabus content."
+            },
+            "Card2": {
+                "title": "Paper 2 - AS Level Structured Questions",
+                "time": "1 hour 15 minutes",
+                "p": "Questions are based on the AS Level subject content."
+            },
+            "Card3": {
+                "title":"Paper 3 - Advanced Practical Skills",
+                "time": "2 hours", 
+                "p":"Questions are based on the experimental skills in the Practical assessment section of the syllabus."
+            },
+            "Card4": {
+                "title": "Paper 4 - A Level Structured Questions",
+                "time": "2 hours",
+                "p": "Questions are based on the A Level syllabus content; knowledge of material from the AS Level syllabus content will be required."
+            },
+            "Card5": {
+                "title": "Paper 5 - Planning, Analysis and Evaluation",
+                "time": "1 hour 15 minutes",
+                "p": "Questions based on the experimental skills of planning, analysis and evaluation."
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidates for Cambridge International AS Level Chemistry study the following topics:",
+                "p": "Physical Chemistry \n Inorganic chemistry \n  Organic chemistry \n Analysis"                             
+            },
+            "A": {
+                "title":"Candidates for Cambridge International A Level Chemistry study the AS topics and the following topics:",
+                "p": "Physical Chemistry \n Inorganic chemistry \n  Organic chemistry \n Analysis"
+            }
+        }
+    },
+    {
+        "name": "Computer-Science",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FComputer%20Science.webp?alt=media&token=91bad806-d76a-41a4-8bb3-6ce2a8708005&_gl=1*a3xl4k*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTIxMDUuMjIuMC4w",
+        "pdf":"https://drive.google.com/file/d/1RFcm6VSggCpxaEjqhYd_YVXYqMimzluo/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1 - Theory Fundamentals",
+                "time": "1 hour 30 minutes", 
+                "p": "Paper 1 will assess sections 1 to 8 of the syllabus content. Written paper. Externally assessed."
+            },
+            "Card2": {
+                "title": "Paper 2 Fundamental Problem - solving and Programming Skills",
+                "time": "2 hours",
+                "p": "Paper 2 will assess sections 9 to 12 of the syllabus content. Candidates will need to write answers in pseudocode. Written paper. Externally assessed." 
+            },
+            "Card3": {
+                "title":"Paper 3 Advanced Theory",
+                "time": "1 hour 30 minutes", 
+                "p":"Paper 3 will assess sections 13 to 20 of the syllabus content. Written paper. Externally assessed. "
+            },
+            "Card4": {
+                "title": "Paper 4 Practical",
+                "time": "2 hours 30 minutes",
+                "p": "Paper 4 will assess sections 19 to 20 of the syllabus content, except for low-level and declarative programming. Candidates will submit complete program code and evidence of testing. Candidates will be required to use either Java, VB.NET or Python programming languages. Externally assessed. "
+            },
+            "Card5": {
+                "title": "Paper 5 - Planning, Analysis and Evaluation",
+                "time": "1 hour 15 minutes",
+                "p": "Questions based on the experimental skills of planning, analysis and evaluation."
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidiates for Cambridge International AS Level and A level study the following topics:",
+                "p": "Information representation \n Communication \n Hardware \n Processor Fundamentals \n System Software \n Security, privacy and data integrity \n Ethics and Ownership \n Databases \n Algorithm Design and Problem-Solving \n Data Types and structures \n Programming \n Software Development"                          
+            },
+            "A": {
+                "title":"Candidiates for Cambridge International AS Level and A level study the following topics:",
+                "p": "Data Representation \n Communication and internet technologies \n Hardware and Virtual Machines \n System Software \n Security \n Artificial Intelligence (AI) \n Computational thinking and problem solving \n Further Programming"
+            }
+        }
+    },  {
+        "name": "Economics",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FEconomics.webp?alt=media&token=9dacc6bf-c743-45f4-9068-c3dfce50d53e&_gl=1*km8eke*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTIxMTkuOC4wLjA.",
+        "pdf":"https://drive.google.com/file/d/1h4Hne8hLv7Twxg7Do6m7fc1xE0w5OSCa/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1",
+                "time": "1 hour", 
+                "p": "AS Level Multiple Choice. 30 multiple-choice questions. Questions are based on the AS Level subject content. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2",
+                "time": "2 hours",
+                "p": "AS Level Data Response and Essays. Two essay questions and one response question. Questions are based on the AS Level subject content. Externally assessed" 
+            },
+            "Card3": {
+                "title":"Paper 3",
+                "time": "1 hour 15 minutes", 
+                "p":"A Level Multiple Choice. 30 multiple-choice questions. Questions are based on the A Level subject content; knowledge of material from the AS Level subject content is assumed. Externally assessed"
+            },
+            "Card4": {
+                "title": "Paper 4",
+                "time": "2 hours",
+                "p": " A Level Data Response and Essays. Two essay questions and one response question. Externally assessed."
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidiates for Cambridge International AS Level and A level study the following topics:",
+                "p": "Basic economic ideas and resource allocation \n The price system and the microeconomy \n Government microeconomic intervention \n The macroeconomy \n Government macroeconomic intervention \n International economic issues"                             
+            },
+            "A": {
+                "title":"Candidiates for Cambridge International AS Level and A level study the following topics:",
+                "p": "The price system and the microeconomy \n  Government microeconomic intervention \n The macroeconomy \n Government macroeconomic intervention \n International economic issues"
+            }
+        }
+    },  {
+        "name": "English-Language",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FEnglish.webp?alt=media&token=fe3e385b-9ca1-42cf-978c-29e9bea13e49",
+        "pdf":"https://drive.google.com/file/d/1eUA4wNURi1iMCj4LvCl8EaClMa0UrPN_/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1",
+                "time": "2 hours 15 minutes", 
+                "p": "Reading. Candidates answer two compulsory questions: Question 1 in Section A, and Question 2 in Section B. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2",
+                "time": "2 hours",
+                "p": "Writing. Candidates answer two questions: one compulsory question from Section A, and one question from a choice of three in Section B. Externally assessed"
+            },
+            "Card3": {
+                "title": "Paper 2",
+                "time": "2 hours 15 minutes",
+                "p": "Language Analysis. Candidates answer two compulsory questions: Question 1 in Section A, and Question 2 in Section B. Externally assessed"
+            },
+            "Card4": {
+                "title": "Paper 2",
+                "time": "2 hours 15 minutes",
+                "p": "Language Topics. Candidates answer two compulsory questions each on a separate topic area: Question 1 in Section A, and Question 2 in Section B. Externally assessed"
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidiates for Cambridge International AS Level and A level study the following topics:",
+                "p": "Sustaining accurate, fluent and consistent writing \n Producing informed responses appropriate to the specified form, style, context, and audiences \n Conveying knowledge and understanding from both specific examples and wider studies.  \n These are highly transferable skills and may help learners in other subject areas, as well as equipping them for higher education or employment."                             
+            },
+            "A": {
+                "title":"Candidiates for Cambridge International AS Level and A level study the following topics:",
+                "p": "Sustaining accurate, fluent and consistent writing \n Producing informed responses appropriate to the specified form, style, context, and audiences \n Conveying knowledge and understanding from both specific examples and wider studies.  \n These are highly transferable skills and may help learners in other subject areas, as well as equipping them for higher education or employment."
+            }
+        }
+    },{
+        "name": "English-Literature",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FEnglish.webp?alt=media&token=fe3e385b-9ca1-42cf-978c-29e9bea13e49&_gl=1*1wfhp4d*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTIxNDguNDUuMC4w",
+        "pdf":"https://drive.google.com/file/d/1IWwdRqlWB2f5wd3spS2CR8dWSqeEV4gr/view?usp=sharing",
+        "Assessment": {
+            "Card1": {
+                "title" : "Paper 1",
+                "time": "2 hours", 
+                "p": "Candidates answer two questions: one question from Section A: Drama and one question from Section B: Poetry. 50% of the AS Level, 25% of the A Level. Externally Assessed"
+            },
+            "Card2": {
+                "title": "Paper 2",
+                "time": "2 hours",
+                "p": "Candidates answer two questions: one question from Section A: Shakespeare and one question from Section B: Drama. 25% of the A Level. Externally Assessed"
+            },
+            "Card3": {
+                "title": "Paper 2",
+                "time": "2 hours",
+                "p": "Candidates answer two questions: one question from Section A: Prose and one question from Section B: Unseen. 50% of the AS Level, 25% of the A Level. Externally Assessed"
+            },
+            "Card4": {
+                "title": "Paper 2",
+                "time": "2 hours",
+                "p": "Candidates answer two questions: one question from Section A: Pre-1900 Poetry and Prose, and one question from Section B: Post-1900 Poetry and Prose. 25% of the A Level. Externally Assessed"
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Learners who follow the Cambridge International AS & A Level English Literature syllabus will develop the following skills and understanding:",
+                "p": "enjoy the experience of reading literature \n develop an appreciation of and an informed personal response to literature in English in a range of texts in \n different forms, and from different periods and cultures \n communicate effectively, accurately and appropriately in written form \n develop the interdependent skills of reading, analysis and communication \n analyse and evaluate the methods writers use in creating meaning and effects \n encourage wider reading and an understanding of how it may contribute to personal development \n build a firm foundation for further study of literature."                             
+            }
+        }
+    }, {
+        "name": "Environmental-Management",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FEnvironment%20management.webp?alt=media&token=59588491-6316-4dec-b078-785e1a2724f8",
+        "pdf":"https://drive.google.com/file/d/1JQO4eOg1NL9b3MRdJaHagqh_TfpaiD1V/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1 - Principles of Environmental Management",
+                "time": "1 hour 45 minutes", 
+                "p": "Section A: between four and six structured questions, with a range of task types. Section B: one essay from a choice of two questions. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Management in Context",
+                "time": "1 hour 45 minutes",
+                "p": "Between four and six structured questions, with a range of task types. Externally assessed." 
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidates for Cambridge International AS Level Environmental Management study the following topics"	,
+                "p": "Introduction to environmental management \n Environmental research and data collection \n Managing human population \n Managing ecosystems and biodiversity \n Managing resources \n Managing water supplies \n Managing the atmosphere \n Managing climate change \n AS Level candidates also study investigative skills."	
+                                                 
+            }
+        }
+    },  
+    {
+        "name": "French-Language",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FFrench.webp?alt=media&token=d771d47a-85fe-44f3-8444-1d95216fdcf9&_gl=1*7pcdaz*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTIxNzcuMTYuMC4w",
+        "pdf":"https://drive.google.com/file/d/1x4FH7bcPypOzC4IPbLVd5gfm1V4HzKBA/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Component 1: Speaking Test",
+                "time": "20 minutes - Presentation max 3 ½ minutes", 
+                "p": "There is no question paper for the Speaking Test."
+            },
+            "Card2": {
+                "title": "Component 2: Reading and Writing",
+                "time": "1 hour 45",
+                "p": "Two passages in French are set which deal with related themes. Candidates answer specific and general comprehension questions on the two passages, and respond to a task requiring a summary or comparison of issues raised. French will be used for all questions and answers."
+            },
+            "Card3": {
+                "title": "Component 3: Essay",
+                "time": "1 hour 30 minutes",
+                "p": "A list of five topics. The list changes every year. A question will be set on each of the five topics; candidates choose one question and write an essay in French."
+            },
+            "Card4": {
+                "title": "Component 4: Texts",
+                "time": "2 hour 30 minutes",
+                "p": "Candidates answer three questions in French. Each question must be on a different text, taken from a list provided. The list is divided into two sections: candidates must choose at least one text from each section."
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidiates for Cambridge International AS Level study the following topics:",
+                "p": "Human relationships \n Family \n Generation gap \n Young people \n Patterns of daily life \n Urban and rural life \n The media \n Food and drink \n Law and order \n Philosophy and belief \n Health and fitness \n Work and leisure \n Equality of opportunity \n Employment and unemployment \n Sport \n Travel and tourism \n Education \n Cultural life/heritage \n Social and economic development \n Scientific and medical advances \n Technological innovation \n Environment \n Conservation \n Pollution \n Contemporary aspects of the country or countries where French is spoken."                             
+            }
+        }
+    },  
+    {
+        "name": "Geography",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FGeography2.webp?alt=media&token=12c39f83-e79e-4779-8968-c7d52283b3dd&_gl=1*xmybx2*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTM1NjguNTAuMC4w",
+        "pdf":"https://drive.google.com/file/d/1xkYSb2LnjlHo0BmvhgMSvmFvFSM1043N/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1 - Core Physical Geography",
+                "time": "1 hour 30 minutes", 
+                "p": "Section A: Three data response questions. Section B: One structured question from a choice of three"
+            },
+            "Card2": {
+                "title": "Paper 2 - Core Human Geography",
+                "time": "1 hour 30 minutes",
+                "p": "Section A: Three data response questions. Section B: One structured question from a choice of three"
+            },
+            "Card3": {
+                "title": "Paper 3 - Advanced Physical Geography Options",
+                "time": "1 hour 30 minutes",
+                "p": "Candidates answer questions on two of the optional topics. Each topic consists of one structured question and a choice of essay questions "
+            },
+            "Card4": {
+                "title": "Paper 4 - Advanced Human Geography Options",
+                "time": "1 hour 30 minutes",
+                "p": "Candidates answer questions on two of the optional topics. Each topic consists of one structured question and a choice of essay questions"
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidates for Cambridge International AS Level Geography study the following topics:",
+                "p": "Core Physical Geography \n Hydrology and fluvial geomorphology \n Atmosphere and weather \n Rocks and weathering \n Core Human Geography \n Population Migration \n Settlement \n dynamics"                             
+            },
+            "A": {
+                "title": "Candidates for Cambridge International A Level Geography study the AS Level topics and two options from:",
+                "p": "Advanced Physical Geography Options \n Tropical environments \n Coastal environments \n Hazardous environments \n Hot arid and semi-arid environments \n and two options from: Advanced Human Geography Options  \n Production, location and change \n Environmental management \n Global interdependence \n Economic transition"
+                                           
+            }
+        }
+    },  
+    {
+        "name": "German-Language",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FGerman-1.webp?alt=media&token=d9d5d4df-bfd9-4fcd-a757-271feb7b8449",
+        "pdf":"https://drive.google.com/file/d/1_eUm28rU3iMsca3bLynZoWl5o_pezVbR/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Component 1: Speaking Test",
+                "time": "20 min - Presentation: No more than 3 ½ minutes", 
+                "p": "There is no question paper for the Speaking Test."
+            },
+            "Card2": {
+                "title": "Component 2: Reading and Writing",
+                "time": "1 hour 45 minutes",
+                "p": "Two passages in German are set which deal with related themes. Candidates answer specific and general comprehension questions on the two passages, and respond to a task requiring a summary or comparison of issues raised. German will be used for all questions and answers."
+            },
+            "Card3": {
+                "title": "Component 3: Essay",
+                "time": "1 hour 30 minutes",
+                "p": "A list of five topics provided. The list changes every year. A question will be set on each of the five topics corresponding to the year of examination; candidates choose one question and write an essay in German ."
+            },
+            "Card4": {
+                "title": "Component 4: Texts",
+                "time": "2 hours 30 minutes",
+                "p": "Candidates answer three questions in German. Each question must be on a different text provided. The list for each year is divided into two sections: candidates must choose at least one text from each section."
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidates for Cambridge International AS Level study the following topics:",
+                "p": "Culture  \n Health and well-being  \n Education and future plans  \n Community and society  \n Our responsibility for the planet  \n Science and technology"
+            },
+            "A": {
+                "title": "Candidiates for Cambridge International A Level study the following topics:",
+                "p": "Human relationships  \n  Family  \n  Generation gap  \n  Young people  \n Patterns of daily life  \n Urban and rural life  \n The media  \n  Food and drink  \n  Law and order • \n Philosophy and belief  \n Health and fitness  \n Work and leisure  \n Equality of opportunity  \n Employment and unemployment"
+                                           
+            }
+        }
+    },
+    {
+        "name": "History",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FHistory.webp?alt=media&token=f8f28b1b-e69c-45c3-9226-a3dcd458dcbf&_gl=1*wrazgf*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTIyNDcuMTkuMC4w",
+        "pdf":"https://drive.google.com/file/d/1fERQtgdise4Ig0_zoXU_C4S-9gRyZYaS/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1 - Document question",
+                "time": "1 hour 15 minutes", 
+                "p": "1 Question. Candidates answer one two-part document question on one of the options given. Candidates must answer both parts of the question they choose. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Outline study",
+                "time": "1 hour 45 minutes",
+                "p": "2 questions. Candidates answer two two-part questions from three on one of the options given. Candidates must answer both parts of the questions they choose. Externally assessed"
+            },
+            "Card3": {
+                "title": "Paper 3 - Interpretations question",
+                "time": "1 hour 15 minutes",
+                "p": "1 Question. Candidates answer one interpretations question on one of the options given in the syllabus. Externally assessed"
+            },
+            "Card4": {
+                "title": "Paper 4 - Depth study",
+                "time": "1 hour 45 minutes",
+                "p": "2 questions. Candidates answer two questions on their chosen depth study. Externally assessed"
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidates for Cambridge International AS Level should study the AS Level content for Paper 1 and Paper 2.",
+                "p": "European option: Modern Europe, 1750–1921 \n American option: The history of the USA, 1820–1941 \n International option: International history, 1870–1945"
+                
+                                             
+            },
+            "A": {
+                "title": "Candidates for Cambridge International A Level should study all the syllabus content.",
+                "p": "Topic 1: The origins of the First World War \n Topic 2: The Holocaust \n Topic 3: The origins and development of the Cold War \n European option, Depth study 1: European history in the interwar years, 1919–41  \n American option, Depth study 2: The USA, 1944–92 \n International option, Depth study 3: International history, 1945–92"
+                
+            }
+        }
+    },  
+    {
+        "name": "Information-Technology",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FComputer%20Science.webp?alt=media&token=91bad806-d76a-41a4-8bb3-6ce2a8708005&_gl=1*10seuyo*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTIyNzIuNjAuMC4w",
+        "pdf":"https://drive.google.com/file/d/1cstyHLjsGKcq-KIqSuma1dwk3uHumLXb/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1 - Theory",
+                "time": "1 hour 45 minutes", 
+                "p": "Questions are based on sections 1–11 of the subject content. Candidates answer all questions on the paper. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Pratical ",
+                "time": "2 hours 30 minutes",
+                "p": "The tasks in this practical paper test sections 8–11 of the subject content. Candidates apply knowledge and understanding from sections 1–7 of the subject content. All tasks are compulsory. Candidates select the most appropriate software and must use the most efficient methods to solve each task. Externally assessed"
+            },
+            "Card3": {
+                "title": "Paper 3 - Advanced Theory",
+                "time": "1 hour 45 minutes",
+                "p": "Questions are based on sections 12–20 of the subject content. Sections 1–11 are assumed knowledge and understanding. Candidates answer all questions on the paper. Externally assessed"
+            },
+            "Card4": {
+                "title": "Paper 4 - Advanced Pratical",
+                "time": "2 hours 30 minutes",
+                "p": "The tasks in this practical paper test sections 17–20 of the subject content. The paper includes tasks from sections 8–10 within a problem-solving context. Candidates apply knowledge and understanding of all subject content. All tasks are compulsory. Candidates select the most appropriate software and must use the most efficient methods to solve each task. Externally assessed"
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidates for Cambridge International AS Level study the following topics:",
+                "p": "Data processing and information  \n Hardware and software \n Monitoring and control \n Algorithms and flow charts  \n eSecurity \n The digital divide \n Expert systems \n Spreadsheets \n Modelling  \n Database and file concepts \n Sound and video editing"
+                
+            },
+            "A": {
+                "title": "Candidiates for Cambridge International A Level study the AS level topics and the following:",
+                "p": " IT in society \n New and emerging technologies  \n Communications technology  \n Project management \n System life cycle  \n Mail merge  \n Graphics creation  \n Animation  \n Programming for the web"
+                
+                                           
+            }
+        }
+    },      
+    {
+        "name": "Mathematics",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FMathematics.webp?alt=media&token=0921b7e5-740f-41ae-8ecd-765f55522347&_gl=1*y33nvj*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTIyOTkuMzMuMC4w",
+        "pdf":"https://drive.google.com/file/d/1hcqJoVK0Y-kePjttNz8fWgd1NSwsw6Mc/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1 - Pure Mathematics 1",
+                "time": "1 hour 50", 
+                "p": "10 to 12 structured questions based on the Pure Mathematics 1 subject content. Written examination.Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Pure Mathematics 2",
+                "time": "1 hour 15",
+                "p": "6 to 8 structured questions based on the Pure Mathematics 2 subject content. Written examination. Externally assessed"
+            },
+            "Card3": {
+                "title": "Paper 3 - Pure Mathematics 3",
+                "time": "1 hour 50",
+                "p": "9 to 11 structured questions based on the Pure Mathematics 3 subject content. Written examination. Externally assessed"
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidiates for Cambridge International AS Level and A level study the following topics:",
+                "p": "Pure Mathematics 1  \n Pure Mathematics 2  \n Pure Mathematics 3  \n Mechanics  \n Probability & Statistics 1  \n Probability & Statistics 2"                             
+            }
+        }
+    },  
+    {
+        "name": "Physics",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FPhysics.webp?alt=media&token=74e04624-b2a0-4aaf-8459-cd39a026934c&_gl=1*v8tz86*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTIzMTIuMjAuMC4w",
+        "pdf":"https://drive.google.com/file/d/1vgqk3f7kTIQWWnxtnIs0Qb3gqpfWiWm3/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1 - Multiple Choice",
+                "time": "1 hour 15 minutes", 
+                "p": "40 multiple-choice questions. Questions are based on the AS Level syllabus content. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - AS Level Structured Questions",
+                "time": "1 hour 15 minutes",
+                "p": "Structured questions. Questions are based on the AS Level syllabus content. Externally assessed"
+            },
+            "Card3": {
+                "title": "Paper 3 - Advanced Practical Skills",
+                "time": "2 hours",
+                "p": "Practical work and structured questions. Questions are based on the experimental skills in the Practical assessment section of the syllabus. The context of the questions may be outside the syllabus content. Externally assessed"
+            },
+            "Card4": {
+                "title": "Paper 4 - A Level Structured Questions",
+                "time": "2 hours",
+                "p": "Structured questions. Questions are based on the A Level syllabus content; knowledge of material from the AS Level syllabus content will be required. Externally assessed"
+            },
+            "Card5": {
+                "title": "Paper 5 - Planning, Analysis and Evaluation",
+                "time": "1 hour 15 minutes",
+                "p": "Candidates answer two compulsory questions. Questions are based on the experimental skills in the Practical assessment section of the syllabus. The context of the questions may be outside the syllabus content. Externally assessed"
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidates for Cambridge International AS Level Physics study the following topics:",
+                "p": "Physical quantities and units \n Kinematics  \n Dynamics \n Forces, density and pressure \n Work, energy and power \n Deformation of solids \n Waves \n Superposition \n Electricity  \n D.C. circuits  \n Particle physics"
+                                             
+            },
+            "A": {
+                "title": "Candidates for Cambridge International A Level Physics study the AS Level topics and the following topics:",
+                "p": "Motion in a circle  \n Gravitational fields  \n Temperature \n Ideal gases  \n Thermodynamics  \n Oscillations \n Electric fields \n Capacitance  \n Magnetic fields  \n Alternating currents  \n Quantum physics  \n Nuclear physics \n Medical physics  \n Astronomy and cosmology"                
+            }
+        }
+    },  
+    {
+        "name": "Psychology",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FPsychology.webp?alt=media&token=e1577618-7000-48e8-8cf5-be4d834092f1&_gl=1*qzz2k8*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTIzMjguNC4wLjA.",
+        "pdf":"https://drive.google.com/file/d/1f5SLub8vqcSb9jEb1J0bZvnwE5XVI-5T/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1 Approaches, issues and debates",
+                "time": "1 hour 30 minutes", 
+                "p": "Candidates answer all questions. Short answer questions and an essay question, based on core studies. Candidates answer each question in the spaces provided on the question paper."
+            },
+            "Card2": {
+                "title": "Paper 2 Research methods",
+                "time": "1 hour 30 minutes",
+                "p": "Candidates answer all questions. Section A: Short answer questions, Section B: Scenario-based questions. Section C: A design-based question divided into two parts Candidates answer each question in the spaces provided on the question paper."
+            },
+            "Card3": {
+                "title": "Paper 3 Specialist options: theory",
+                "time": "1 hour 30 minutes",
+                "p": "Candidates answer two questions from two specialist options. Question 1: The question is divided into three parts. Question 2: Structured essay-based question divided into two parts."
+            },
+            "Card4": {
+                "title": "Paper 4 Specialist options: application",
+                "time": "1 hour 30 minutes",
+                "p": "Candidates answer questions from two specialist options. Section A: Candidates answer two questions from a choice of four. Section B: Candidates answer one design-based question from a choice of four. Section C: Candidates answer one essay question from a choice of four."
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidates for Cambridge International AS Level should study the AS Level content for Paper 1 and Paper 2.",
+                "p": "Biological \n Cognitive \n Learning \n Social \n The issues and debates considered at AS Level are: \n the application of psychology to everyday life \n the use of children in psychological research \n the use of animals in psychological research"
+                                             
+            },
+            "A": {
+                "title": "Candidates for Cambridge International A Level should study all the syllabus content.",
+                "p": "Abnormality \n Consumer behaviour \n Health \n Organisations \n These include all the issues and debates introduced at A Level \n cultural bias \n reductionism (versus holism) \n psychometrics \n determinism (versus free-will) \n longitudinal research."                
+            }
+        }
+    },  
+    {
+        "name": "Sociology",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FSociology.webp?alt=media&token=6848fb77-a0b5-45f3-8c9a-a75b9c9fe966&_gl=1*em52nu*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTIzNDAuNjAuMC4w",
+        "pdf":"https://drive.google.com/file/d/1ngqnD0t2lGY1wPFVWeUTvR4bnn1fKUhG/view?usp=share_link",
+"Assessment": {
+            "Card1": {
+                "title" : "Paper 1 - Socialisation, identity and methods of research",
+                "time": "1 hour 30 minutes", 
+                "p": "Candidates answer four questions. Section A: three compulsory questions. Section B: one essay from a choice of two. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Family",
+                "time": "1 hour 30 minutes",
+                "p": "Candidates answer four questions. Section A: three compulsory questions. Section B: one essay from a choice of two. Externally assessed"
+            },
+            "Card3": {
+                "title": "Paper 3 - Education",
+                "time": "1 hour 30 minutes",
+                "p": "Candidates answer four compulsory questions. Question 4 is an essay. Externally assessed"
+            },
+            "Card4": {
+                "title": "Paper 4 Specialist options: application",
+                "time": "1 hour 30 minutes",
+                "p": "Candidates answer two essay questions. Section A: Globalisation Section B: Media Section C: Religion. Each section has two essay questions. Externally assessed"
+            }
+        },
+        "Content": {
+            "AS": {
+                "title": "Candidiates for Cambridge International AS Level and A level study the following topics:",
+                "p": "Socialisation, identity and methods of research \n Methods of research \n Theories of the family and social change \n Family roles and changing relationships \n Education and society \n Education and inequality \n Globalisation, Media and Religion \n Contemporary issues \n Ownership and control of the media \n Media representation and effects \n Religion and social order \n The influence of religion"                            
+            }
+        }
+    },
+    {
+        "name": "Travel-&-Tourism",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FTraver%20and%20Tourism.webp?alt=media&token=d6e37aa4-26a2-4e49-8d18-68b3bebb7c66&_gl=1*r3yu7l*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE5MzEuNjAuMC4w",
+        "pdf": "https://drive.google.com/open?id=18NOw2CCqEgS-A8lqYL2UZUTpUbiRGWW2&usp=drive_copy"
+
+    }
+]

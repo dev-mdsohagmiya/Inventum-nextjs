@@ -1,0 +1,460 @@
+[
+    {
+        "name": "Accounting",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FAccounting1.webp?alt=media&token=ddd6586a-47d5-4ef8-ad92-426e4bc59afa&_gl=1*1oy0f1i*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE2NDAuOS4wLjA.",
+        "pdf": "https://drive.google.com/file/d/1R_3fENWZUDNerh4wjppI7j-Duk4RyK_w/view?usp=share_link",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1 - Multiple-choice",
+                "time": "1 hour 15 minutes",
+                "p": "Multiple-choice questions Questions will be based on all syllabus content Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Structured Written Paper",
+                "time": "1 hour 45 minutes",
+                "p": "Questions will be based on all syllabus content Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "The fundamentals of accounting \n Sources and recording of data \n Verification of accounting records \n Accounting procedures \n Preparation of financial statements \n Analysis and interpretation \n Accounting principles and policies"
+            }
+        }
+    },
+    {
+        "name": "Biology",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FBiology.webp?alt=media&token=5a7c0a52-9f73-4cb6-8230-2fd8e2249459&_gl=1*lg4z65*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE2NjIuNDguMC4w",
+        "pdf": "https://drive.google.com/file/d/1U6weqxoGunm9s_S_nHHGWF0BmCldM-lk/view?usp=share_link",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1: Multiple Choice (Core)",
+                "time": "45 minutes",
+                "p": "40 four-option multiple-choice questions. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2: Multiple Choice (Extended)",
+                "time": "45 minutes",
+                "p": "40 four-option multiple-choice questions. Externally assessed"
+            },
+            "Card3": {
+                "title": "Paper 3: Theory (Core)",
+                "time": "1 hour 15 minutes",
+                "p": "Short-answer and structured questions. Externally assessed"
+            },
+            "Card4": {
+                "title": "Paper 4: Theory (Extended)",
+                "time": "1 hour 15 minutes",
+                "p": "Short-answer and structured questions. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "Characteristics and classification of living organisms \n Movement into and out of cells \n Biological molecules \n Enzymes \n Plant/human nutrition \n Transport in plants/animals \n Diseases and immunity  \n Respiration  \n Excretion in humans  \n Coordination and response  \n Drugs  \n Reproduction  \n Inheritance  \n Organisms and their environment \n Human influences on ecosystems \n iotechnology and genetic modification"
+            }
+        }
+    },
+    {
+        "name": "Business-Studies",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FBusiness%20studies.webp?alt=media&token=19a5e588-552e-42a5-aa98-da4bbcc1dc29&_gl=1*tq2f6r*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE2NzcuMzMuMC4w",
+        "pdf": "https://drive.google.com/file/d/1XJBiFG7BaxGT3WSyXQs3bdFFj_8TvRU9/view?usp=share_link",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1 - Short Answer and Data Response",
+                "time": "1 hour 30 minutes",
+                "p": "Four questions requiring a mixture of short answers and structured data responses. Candidates answer all questions. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Case Study",
+                "time": "1 hour 30 minutes",
+                "p": "Four questions based on a case study, provided as an insert with the paper. Candidates answer all questions. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "Understanding business activity \n People in business \n Marketing \n Operations management \n Financial information and decisions \n External influences on business activity"
+            }
+        }
+    },
+    {
+        "name": "Chemistry",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FChemistry.webp?alt=media&token=85774e51-e6b8-4949-b196-99d1c46976d6&_gl=1*1tu3mqg*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE2ODcuMjMuMC4w",
+        "pdf": "https://drive.google.com/file/d/1_h5IkghaiLA5f_cSpisCYmq1rE15_Jn1/view?usp=share_link",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1: Multiple Choice (Core)",
+                "time": "45 minutes",
+                "p": "40 four-option multiple-choice questions. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2: Multiple Choice (Extended)",
+                "time": "45 minutes",
+                "p": "40 four-option multiple-choice questions. Externally assessed"
+            },
+            "Card3": {
+                "title": "Paper 3: Theory (Core)",
+                "time": "1 hour 15 minutes",
+                "p": "Short-answer and structured questions. Externally assessed"
+            },
+            "Card4": {
+                "title": "Paper 4: Theory (Extended)",
+                "time": "1 hour 15 minutes",
+                "p": "Short-answer and structured questions. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "States of matter  \n Atoms, elements and compounds \n Stoichiometry \n Electrochemistry \n Chemical energetics \n Chemical reactions \n Acids, bases and salts \n The Periodic Table \n Metals \n Chemistry of the environment \n Organic chemistry  \n Experimental techniques and chemical analysis"
+            }
+        }
+    },
+    {
+        "name": "Computer-Science",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FComputer%20Science.webp?alt=media&token=91bad806-d76a-41a4-8bb3-6ce2a8708005&_gl=1*1cvlxql*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE2OTYuMTQuMC4w",
+        "pdf": "https://drive.google.com/file/d/1b6NwwHJ7MyS7xgmfwOpUx42TDPIse-rI/view?usp=share_link",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1 - Computer Systems",
+                "time": "1 hour 45 minutes",
+                "p": "Short-answer and structured questions. Questions will be based on Topics 1–6 of the subject content. All questions are compulsory. No calculators are permitted. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Algorithms, Programming and Logic",
+                "time": "1 hour 45 minutes",
+                "p": "Short-answer and structured questions and a scenario-based question. Questions will be based on Topics 7–10 of the subject content. All questions are compulsory. No calculators are permitted. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "Computer systems \n Data representation \n Data transmission  \n Hardware  \n Software  \n The internet and its uses  \n Automated and emerging technologies   \n Algorithm design and problem-solving  \n Programming \n Databases  \n Boolean logic"
+            }
+        }
+    },
+    {
+        "name": "Economics",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FEconomics.webp?alt=media&token=9dacc6bf-c743-45f4-9068-c3dfce50d53e&_gl=1*x8yj7v*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE3MDcuMy4wLjA.",
+        "pdf": "https://drive.google.com/file/d/1cFkPBz-oTD6PEyFR4TqkP_2VSIeG_J1x/view?usp=share_link",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1- Multiple Choice",
+                "time": "45 minutes",
+                "p": "Candidates answer all 30 questions Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Structured Questions",
+                "time": "2 hours 15 minutes",
+                "p": "Candidates answer one compulsory question and three questions from a choice of four. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "The basic economic problem \n The allocation of resources \n Microeconomic decision makers \n Government and the macroeconomy \n Economic development \n International trade and globalisation"
+            }
+        }
+    },
+    {
+        "name": "English-1st-Language",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FEnglish2.webp?alt=media&token=53a49a29-990c-4bca-8a18-14c4069c6c14&_gl=1*h3mscc*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE3MzUuNTEuMC4w",
+        "pdf": "https://drive.google.com/file/d/1sI0FgitbKFzujqGy3FmOUIGWtg-l-VoQ/view?usp=share_link",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1 - Reading",
+                "time": "2 hours",
+                "p": "Structured and extended writing questions. Questions will be based on three reading texts. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Directed Writing and Composition",
+                "time": "2 hours",
+                "p": "Extended writing question and a composition task. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Cambridge IGCSE First Language English offers candidates the opportunity to",
+                "p": "respond with understanding to a rich array of reading texts during the course as a whole \n use these texts to inform and inspire their own writing, and write in a range of text types for different purposes and audiences.  \n develop both their speaking and their listening skills, delivering a presentation, and responding to questions and engaging in conversations.  \n become appreciative and critical readers, writers, speakers and listeners."
+            }
+        }
+    },
+    {
+        "name": "Environmental-Management",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FEnvironment%20management.webp?alt=media&token=59588491-6316-4dec-b078-785e1a2724f8",
+        "pdf": "https://drive.google.com/open?id=1E-2y32fjGkvymirQV-j8miEoT0K2cJEU&usp=drive_copy",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1 -Theory",
+                "time": "1 hour 45 minutes",
+                "p": "Section A: short and structured questions. Section B: short-answer and extended response questions based on source material. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Management in context",
+                "time": "1 hour 45 minutes",
+                "p": "Short, and extended response questions based on source material. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "Rocks and minerals and their exploitation \n Energy and the environment  \n Agriculture and the environment  \n Water and its management  \n Oceans and fisheries \n Managing natural hazards \n The atmosphere and human activities \n Human population \n Natural ecosystems and human activities."
+            }
+        }
+    },
+    {
+        "name": "French-Foreign-Language",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FFrench2.webp?alt=media&token=e286ba51-d61c-46ec-a64e-beafa9d49da3&_gl=1*1z0ills*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE3NzcuOS4wLjA.",
+        "pdf": "https://drive.google.com/open?id=1SsIb63c_QUdxD66tITH95bgMjkmgFYfH&usp=drive_copy",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1 - Listening",
+                "time": "Approximately 50 min",
+                "p": "Candidates listen to a number of recordings and answer multiple-choice and matching questions. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Reading",
+                "time": "1 hour",
+                "p": "Candidates read a number of texts and answer multiple-choice and matching questions as well as questions requiring short answers. Externally assessed"
+            },
+            "Card3": {
+                "title": "Paper 3 -  Speaking",
+                "time": "Approximately 10 min",
+                "p": "Candidates complete one role play and conversations on two topics. Internally assessed and externally moderated"
+            },
+            "Card4": {
+                "title": "Paper 4 - Writing",
+                "time": "1 hour",
+                "p": "Candidates complete one form-filling task, one directed writing task and one task in the format of an email/letter or article/blog. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "Everyday activities  \n Personal and social life  \n The world around us  \n The world of work  \n The international world"
+            }
+        }
+    },
+    {
+        "name": "Geography",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FGeography2.webp?alt=media&token=12c39f83-e79e-4779-8968-c7d52283b3dd&_gl=1*1tuz19p*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE3OTEuNjAuMC4w",
+        "pdf": "https://drive.google.com/open?id=1cE_7FExkhOLQr0cp5XF_LlMkGOFbShKp&usp=drive_copy",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1 - Geographical Themes",
+                "time": "1 hour 45 minutes",
+                "p": "Candidates answer three questions, each worth 25 marks. Candidates must answer one question from each section. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Geographical Skills",
+                "time": "1 hour 30 minutes",
+                "p": "Candidates answer all the questions. Externally assessed"
+            },
+            "Card3": {
+                "title": "Component 3 Coursework",
+                "time": "",
+                "p": "Teachers set one centre-based assignment of up to 2000 words. Centre-based assessment"
+            },
+            "Card4": {
+                "title": "Paper 4 - Alternative to Coursework",
+                "time": "1 hour 30 minutes",
+                "p": "Candidates answer two compulsory questions, completing a series of written tasks. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "Theme 1: Population and settlement  \n Theme 2: The natural environment \n Theme 3: Economic development"
+            }
+        }
+    },
+    {
+        "name": "German-as-a-Foreign-Language",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FGerman2.webp?alt=media&token=35f6cbdc-0e3d-40c5-969c-db68f312006f",
+        "pdf": "https://drive.google.com/open?id=1g0_akE-wDNdVoMxfYKP9PCYHaxzLzMwr&usp=drive_copy",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1 - Listening",
+                "time": "Approximately 50 min",
+                "p": "Candidates listen to a number of recordings and answer multiple-choice and matching questions. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Reading",
+                "time": "1 hour",
+                "p": "Candidates read a number of texts and answer multiple-choice and matching questions as well as questions requiring short answers. Externally assessed"
+            },
+            "Card3": {
+                "title": "Paper 3 - Speaking",
+                "time": "Approximately 10 min",
+                "p": "Candidates complete one role play and conversations on two topics. Internally assessed and externally moderated"
+            },
+            "Card4": {
+                "title": "Paper 4 - Writing",
+                "time": "1 hour",
+                "p": "Candidates complete one form-filling task, one directed writing task and one task in the format of an email/letter or article/blog. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "Everyday activities \n Personal and social life \n The world around us  \n The world of work  \n The international world"
+            }
+        }
+    },
+    {
+        "name": "History",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FHistory.webp?alt=media&token=f8f28b1b-e69c-45c3-9226-a3dcd458dcbf&_gl=1*ocorht*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE4NDQuNy4wLjA.",
+        "pdf": "https://drive.google.com/open?id=1GwmCM-MGHUkh2YjLQZjH9DtiWpl8Kcui&usp=drive_copy",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1 - Written paper",
+                "time": "2 hours",
+                "p": "Candidates answer two questions from Section A (Core Content) and one question from Section B (Depth Studies). All questions are in the form of structured essays, split into three parts: (a), (b) and (c). Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Written paper",
+                "time": "2 hours",
+                "p": "Candidates answer six questions on one prescribed topic taken from the Core Content. There is a range of source material relating to each prescribed topic. The prescribed topic changes in each examination session – see section 4. Externally assessed"
+            },
+            "Card3": {
+                "title": "Component 3 Coursework",
+                "time": "",
+                "p": "Candidates produce one piece of extended writing based on a Depth Study from the syllabus or a Depth Study devised by the Centre. Internally assessed/externally moderated"
+            },
+            "Card4": {
+                "title": "Paper 4 - Alternative to Coursework - Written paper",
+                "time": "1 hour",
+                "p": "Candidates answer one question on a Depth Study. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "   Option A: \n The nineteenth century: the development of modern nation states, 1848–1914 \n      Option B \n The twentieth century: international relations since 1919 \n In addition, all candidates must also study at least one of the following Depth Studies"
+            }
+        }
+    },
+    {
+        "name": "Mathematics",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FMathematics.webp?alt=media&token=0921b7e5-740f-41ae-8ecd-765f55522347&_gl=1*1spmpa*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE4NjMuNjAuMC4w",
+        "pdf": "https://drive.google.com/open?id=1KGJJu1N7jPbdYyImtJsgVMwqu92RxP3X&usp=drive_copy",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1 (Core)",
+                "time": "1 hour",
+                "p": "Short-answer questions. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 (Extended)",
+                "time": "1 hour 30 minutes",
+                "p": "Short-answer questions. Externally assessed"
+            },
+            "Card3": {
+                "title": "Paper 3 (Core)",
+                "time": "2 hours",
+                "p": "Structured questions. Externally assessed"
+            },
+            "Card4": {
+                "title": "Paper 4 (Extended)",
+                "time": "2 hours 30 minutes",
+                "p": "Structured questions. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "Number \n Algebra \n Alebra and graphs \n Coordinate geometry \n Shape and space \n Geometry \n Mensuration \n Trigonometry \n Vectors and transformations \n Probability and statistics"
+            }
+        }
+    },
+    {
+        "name": "Physics",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FPhysics.webp?alt=media&token=74e04624-b2a0-4aaf-8459-cd39a026934c&_gl=1*ox9syl*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE4ODEuNDIuMC4w",
+        "pdf": "https://drive.google.com/open?id=1OPuWkLvjPMCvV7z-UXCsV8RdRLQctCvI&usp=drive_copy",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1: Multiple Choice (Core)",
+                "time": "45 minutes",
+                "p": "40 four-option multiple-choice questions. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2: Multiple Choice (Extended)",
+                "time": "45 minutes",
+                "p": "40 four-option multiple-choice questions. Externally assessed"
+            },
+            "Card3": {
+                "title": "Paper 3: Theory (Core)",
+                "time": "1 hour 15 minutes",
+                "p": "Short-answer and structured questions. Externally assessed"
+            },
+            "Card4": {
+                "title": "Paper 4: Theory (Extended)",
+                "time": "1 hours 15 minutes",
+                "p": "Short-answer and structured questions. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "Motion, forces and energy \n Thermal physics \n Waves \n Electricity and magnetism \n Nuclear physics \n Space physics"
+            }
+        }
+    },
+    {
+        "name": "Sociology",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FSociology.webp?alt=media&token=6848fb77-a0b5-45f3-8c9a-a75b9c9fe966&_gl=1*1ajer08*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE4OTcuMjYuMC4w",
+        "pdf": "https://drive.google.com/open?id=1mvndYQlunKW01g80N16hYNxiQ9ibJcim&usp=drive_copy",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1",
+                "time": "2 hours (including 15 minutes’ reading time",
+                "p": "Candidates answer one compulsory data response question and one optional structured question from a choice of two. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2",
+                "time": "1 hours 45 (including 15 minutes’ reading time",
+                "p": "Candidates answer two optional structured questions from a choice of four. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "Unit 1: Theory and methods  \n Unit 2: Culture, identity and socialisation  \n Unit 3: Social inequality  \n Unit 4: Family  \n Unit 5: Education  \n Unit 6: Crime, deviance and social control  \n Unit 7: Media"
+            }
+        }
+    },
+    {
+        "name": "Spanish-as-a-Foreign-Language",
+        "img": "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/subjectphotos%2FSpanish2.webp?alt=media&token=be422dec-9ca0-4d40-a63e-c4f42e3b9d4c&_gl=1*1t2xysi*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTE5MTUuOC4wLjA.",
+        "pdf": "https://drive.google.com/open?id=1dpmm0cnEGqPYmeCPmYj6MNVVaXO4nckY&usp=drive_copy",
+        "Assessment": {
+            "Card1": {
+                "title": "Paper 1 - Listening",
+                "time": "Approximately 50 minutes",
+                "p": "Candidates listen to a number of recordings and answer multiple-choice and matching questions. Externally assessed"
+            },
+            "Card2": {
+                "title": "Paper 2 - Reading",
+                "time": "1 hour",
+                "p": "Candidates read a number of texts and answer multiple-choice and matching questions as well as questions requiring short answers. Externally assessed"
+            },
+            "Card3": {
+                "title": "Paper 3 - Speaking",
+                "time": "Approximately 10 minutes",
+                "p": "Candidates complete one role play and conversations on two topics. Internally assessed and externally moderated"
+            },
+            "Card4": {
+                "title": "Paper 4 - Writing",
+                "time": "1 hour",
+                "p": "Candidates complete one form-filling task, one directed writing task and one task in the format of an email/letter or article/blog. Externally assessed"
+            }
+        },
+        "Content": {
+            "Wrapper": {
+                "title": "Candidates study the following topics:",
+                "p": "Everyday activities  \n Personal and social life \n The world around us \n The world of work  \n The international world"
+            }
+        }
+    }
+]
