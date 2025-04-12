@@ -428,7 +428,7 @@ export default function Navbar() {
           <Box className="flex justify-center items-center">
             <div className="h-[80vh] md:h-[100vh] md:w-[70vw] w-[99vw]">
               <iframe
-                className=""
+            
                 src="https://apply.inventumonline.com/"
                 width={"100%"}
                 height={"100%"}
