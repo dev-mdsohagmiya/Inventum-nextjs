@@ -65,10 +65,15 @@ export default function Navbar() {
   const pathname = usePathname();
   const [toggled, setToggled] = useState(false);
   const [gclid, setGclid] = useState(null);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   // Get search params after component mounts
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (isClient) {
       const params = new URLSearchParams(window.location.search);
       const gclidParam = params.get("gclid");
       if (gclidParam) {
@@ -76,55 +81,67 @@ export default function Navbar() {
         localStorage.setItem("gclid", gclidParam);
       }
     }
-  }, []);
+  }, [isClient]);
 
   function apply() {
     setModal1IsOpen(true);
   }
 
   function toggleDropdownCurriculum() {
+    if (!isClient) return;
     const a = document.querySelector("#dropdownNavbarCurriculum");
-    a.classList.contains("hidden")
-      ? a.classList.remove("hidden")
-      : a.classList.add("hidden");
+    if (a) {
+      a.classList.contains("hidden")
+        ? a.classList.remove("hidden")
+        : a.classList.add("hidden");
+    }
   }
 
   function toggleDropdownAdmissions() {
+    if (!isClient) return;
     const a = document.querySelector("#dropdownNavbarAdmission");
-    a.classList.contains("hidden")
-      ? a.classList.remove("hidden")
-      : a.classList.add("hidden");
+    if (a) {
+      a.classList.contains("hidden")
+        ? a.classList.remove("hidden")
+        : a.classList.add("hidden");
+    }
   }
 
   function toggleDropdownStudent() {
+    if (!isClient) return;
     const a = document.querySelector("#dropdownNavbarStudent");
-    a.classList.contains("hidden")
-      ? a.classList.remove("hidden")
-      : a.classList.add("hidden");
+    if (a) {
+      a.classList.contains("hidden")
+        ? a.classList.remove("hidden")
+        : a.classList.add("hidden");
+    }
   }
 
   function toggleHamburger() {
+    if (!isClient) return;
     const a = document.querySelector("#hamburger-menu");
     const b = document.querySelector("#menu03");
-    a.classList.contains("hidden")
-      ? a.classList.remove("hidden")
-      : a.classList.add("hidden");
-    b.classList.contains("active")
-      ? b.classList.remove("active")
-      : b.classList.add("active");
-    setToggled(!toggled);
+    if (a && b) {
+      a.classList.contains("hidden")
+        ? a.classList.remove("hidden")
+        : a.classList.add("hidden");
+      b.classList.contains("active")
+        ? b.classList.remove("active")
+        : b.classList.add("active");
+      setToggled(!toggled);
+    }
   }
 
-  const isLandingPage = pathname.includes("information");
+  const isLandingPage = pathname?.includes("information");
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.location.hash) {
+    if (isClient && window.location.hash) {
       const targetId = window.location.hash.substring(1);
       const element = document.getElementById(targetId);
       
       if (element) {
         const navbar = document.querySelector('nav');
-        const navbarHeight = navbar.offsetHeight;
+        const navbarHeight = navbar?.offsetHeight || 0;
         const elementPosition = element.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
 
@@ -134,8 +151,22 @@ export default function Navbar() {
         });
       }
     }
-  }, [pathname]);
+  }, [pathname, isClient]);
 
+  if (!isClient) {
+    return (
+      <nav className="py-2.5 bg-dd fixed w-full z-[999] top-0 left-0 border-b border-gray-600">
+        <div className="container flex flex-wrap justify-between mx-auto">
+          <Link href="/">
+            <div className="flex items-center gap-2 sm:gap-5">
+              <div className="xl:w-10 w-6 bg-gray-600 animate-pulse h-10"></div>
+              <div className="xl:w-60 w-48 m-0 p-0 bg-gray-600 animate-pulse h-10"></div>
+            </div>
+          </Link>
+        </div>
+      </nav>
+    );
+  }
 
   return (
     <nav className="py-2.5 bg-dd fixed w-full z-[999] top-0 left-0 border-b border-gray-600">
@@ -428,7 +459,6 @@ export default function Navbar() {
           <Box className="flex justify-center items-center">
             <div className="h-[80vh] md:h-[100vh] md:w-[70vw] w-[99vw]">
               <iframe
-            
                 src="https://apply.inventumonline.com/"
                 width={"100%"}
                 height={"100%"}
