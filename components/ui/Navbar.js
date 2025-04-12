@@ -62,16 +62,21 @@ const Fade = React.forwardRef(function Fade(props, ref) {
 
 export default function Navbar() {
   const [modal1IsOpen, setModal1IsOpen] = useState(false);
-  const searchParams = useSearchParams();
   const pathname = usePathname();
   const [toggled, setToggled] = useState(false);
+  const [gclid, setGclid] = useState(null);
 
+  // Get search params after component mounts
   useEffect(() => {
-    const gclid = searchParams.get("gclid");
-    if (gclid) {
-      localStorage.setItem("gclid", gclid);
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const gclidParam = params.get("gclid");
+      if (gclidParam) {
+        setGclid(gclidParam);
+        localStorage.setItem("gclid", gclidParam);
+      }
     }
-  }, [searchParams]);
+  }, []);
 
   function apply() {
     setModal1IsOpen(true);
@@ -113,7 +118,7 @@ export default function Navbar() {
   const isLandingPage = pathname.includes("information");
 
   useEffect(() => {
-    if (window.location.hash) {
+    if (typeof window !== 'undefined' && window.location.hash) {
       const targetId = window.location.hash.substring(1);
       const element = document.getElementById(targetId);
       
@@ -130,6 +135,7 @@ export default function Navbar() {
       }
     }
   }, [pathname]);
+
 
   return (
     <nav className="py-2.5 bg-dd fixed w-full z-[999] top-0 left-0 border-b border-gray-600">
