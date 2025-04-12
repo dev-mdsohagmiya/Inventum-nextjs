@@ -3,24 +3,23 @@ import { PopupButton } from "react-calendly";
 import { useEffect, useState } from "react";
 
 export default function CallButton(props) {
-  const [rootElement, setRootElement] = useState(null);
+  const [isMounted, setIsMounted] = useState(false);
+  const [salesforceUuid, setSalesforceUuid] = useState(null);
 
   useEffect(() => {
-    // This ensures document is available only on client side
-    setRootElement(document.getElementById("root"));
+    setIsMounted(true);
+    setSalesforceUuid(localStorage.getItem("gclid") || null);
   }, []);
+
+  if (!isMounted) return null;
 
   return (
     <PopupButton
       url="https://calendly.com/inventuminternational/30min"
-      /*
-       * react-calendly uses React's Portal feature to render the popup modal.
-       * In Next.js, we need to handle the case where document might not be available during SSR.
-       */
-      rootElement={rootElement}
+      rootElement={document.body}
       text={props.text ?? "Schedule a discovery call"}
-      utm={{ 
-        salesforce_uuid: typeof window !== 'undefined' ? localStorage.getItem("gclid") || null : null 
+      utm={{
+        salesforce_uuid: salesforceUuid,
       }}
       className={
         props.className ??
