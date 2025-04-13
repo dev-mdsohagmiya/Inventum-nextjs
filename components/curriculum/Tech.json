@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Artificial Intelligence",
+        "description": "Explore the fundamentals of AI and machine learning."
+    },
+    {
+        "name": "Blockchain",
+        "description": "Learn about decentralized technologies and cryptocurrencies."
+    },
+    {
+        "name": "Gene Editing",
+        "description": "Study the principles and applications of genetic engineering."
+    },
+    {
+        "name": "Longevity",
+        "description": "Explore technologies and research in human longevity."
+    },
+    {
+        "name": "Bionics",
+        "description": "Learn about the integration of biology and technology."
+    }
+] 

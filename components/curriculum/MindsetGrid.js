@@ -1,52 +1,30 @@
+'use client';
 
-import Mindsetjson from './Mindset.json'
-import {useState} from 'react'
-import TechGrid from './techgrid/TechGrid';
-import TechCards from './techgrid/TechCards';
-export default function MindsetGrid(props) {
-    const [showAllMindsets, setShowAllMindsets] = useState(props.topMindsets === undefined ? true : false);
+import { useState } from 'react';
+import Mindset from './Mindset.json';
 
-    const customMindsetsNames = props.topMindsets ?? Mindsetjson
-      
-        // Filter mindsets based on their names
-        const filteredMindsets = Mindsetjson.filter(mindset =>
-          customMindsetsNames.includes(mindset.Mindset)
-        );
+export default function MindsetGrid({ topMindsets }) {
+    const [hoveredMindset, setHoveredMindset] = useState(null);
+
     return (
-        <div className='bg-dl'>
-            <div className=' grid gap-10 mx-auto flex-wrap justify-center py-10 customgrid'>
-            { showAllMindsets ?
-                Mindsetjson && Mindsetjson.map(mindset => {
-                    return <TechCards name={mindset.Mindset} img={mindset.img} text={mindset.Text} size={mindset.size} key={mindset.Mindset} position={mindset.position}/>
-
-                })
-                : 
-                Mindsetjson && filteredMindsets.map(mindset => {
-                    return <TechCards name={mindset.Mindset} img={mindset.img} text={mindset.Text} size={mindset.size} key={mindset.Mindset} position={mindset.position}/>
-
-                })
-            }
-            {props.topMindsets === undefined ?
-            <></>
-            :  showAllMindsets === false ? (
-                <button 
-                onClick={() => setShowAllMindsets(true)}
-                className={`w-72 h-40 hover:bg-pg hover:bg-clip-text hover:text-transparent arrow-hover-filter text-ll`}>
-                    <img draggable={false} alt='arrow' className="rotate-180 md:rotate-90 mx-auto w-20 bg-inherit " width={'60rem'}  src={"/images/learn/arrow-top.webp"}></img>       
-                    <h5 className="mb-2 text-lg font-bold tracking-tight">Show All Mindsets</h5>
-                </button>
-            ) : showAllMindsets === true 
-            ? 
-            <button 
-                onClick={() => setShowAllMindsets(false)}
-                className={`w-72 h-40 hover:bg-pg hover:bg-clip-text hover:text-transparent arrow-hover-filter text-ll`}>
-                    <img draggable={false} alt='arrow' className="-rotate-180 md:-rotate-90 brightness-200 mx-auto w-20" width={'60rem'} src={"/images/learn/arrow-top.webp"}></img>       
-                    <h5 className="mb-2 text-lg font-bold tracking-tight ">Show Less Mindsets</h5>
-                  </button>
-            : 
-            <p>An error occured, please reload.</p> 
-            }
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-5 max-w-7xl mx-auto">
+            {Mindset.filter(mindset => topMindsets.includes(mindset.name))
+                .map((mindset) => (
+                    <div
+                        key={mindset.name}
+                        className="bg-dl rounded-xl p-6 transform transition-all duration-300 hover:scale-105"
+                        onMouseEnter={() => setHoveredMindset(mindset.name)}
+                        onMouseLeave={() => setHoveredMindset(null)}
+                    >
+                        <h2 className="text-2xl font-bold text-white mb-3">{mindset.name}</h2>
+                        <p className="text-gray-300">{mindset.description}</p>
+                        {hoveredMindset === mindset.name && (
+                            <div className="mt-4">
+                                <span className="text-pg">Learn more about this mindset →</span>
+                            </div>
+                        )}
+                    </div>
+                ))}
         </div>
-    )
+    );
 }

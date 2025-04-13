@@ -2,7 +2,7 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -53,7 +53,19 @@ library.add(faSpinner);
 
 export default function LandingPage() {
   const [openTab, setOpenTab] = useState(1);
+
+  const [isLoading,setIsLoading] = useState(true)
+
+  useEffect(()=>{
+    setIsLoading(false)
+  },[])
   
+if( false) {
+  return(<div className="h-screen bg-amber-200">
+    <h1>Loading....</h1>
+  </div>)
+}
+else
   return (
     <>
       <Head>
