@@ -439,7 +439,7 @@ export default function Navbar() {
                   </ul>
                 </div>
               </li>
-              <button className="my-2">
+              <div className="my-2">
                 <button
                   onClick={() => apply()}
                   className="text-ll px-6 cursor-pointer py-4 text-base rounded-[16px] hover:scale-[1.05] transition-all ease-in-out bg-pg w-24  items-center"
@@ -447,7 +447,7 @@ export default function Navbar() {
                 >
                   Apply!
                 </button>
-              </button>
+              </div>
               <CallButton utmSource="navbar" textSize="text-sm" />
             </ul>
           </div>
