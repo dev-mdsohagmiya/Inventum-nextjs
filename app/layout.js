@@ -1,9 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import "./animate.min.css";
-import Navbar from "@/components/ui/Navbar";
 import FAQSection from "@/components/ui/FAQSection";
+
 import Footer from "@/components/ui/Footer";
+import Navbar from "@/components/ui/Navbar";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./animate.min.css";
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,16 +24,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-         <Navbar/>
+        <Navbar />
         {children}
         <FAQSection />
         <Footer />
       </body>
-    
     </html>
   );
 }
