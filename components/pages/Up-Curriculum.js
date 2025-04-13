@@ -1,3 +1,5 @@
+"use client";
+
 import PMP from "./Curriculum/PMP";
 import UPHero from "./Curriculum/UPHero";
 import UPSubjects from "./Curriculum/UPSubjects";

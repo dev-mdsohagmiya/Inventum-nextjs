@@ -18,6 +18,8 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/base": "^5.0.0-alpha.123",
     "@mui/system": "^7.0.2",
+    "@quillforms/react-renderer-utils": "^5.11.0",
+    "@quillforms/renderer-core": "^5.9.0",
     "@tailwindcss/typography": "^0.5.16",
     "@u-wave/react-vimeo": "^0.9.12",
     "flowbite": "^3.1.2",
