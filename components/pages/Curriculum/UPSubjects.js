@@ -1,8 +1,8 @@
+import arrowTop from "@/public/icons/arrow-top.webp";
 import { useState } from "react";
 import { InView } from "react-intersection-observer";
 import SubjectCards from "./SubjectCards";
 import UPsubjectsjson from "./UPsubjects.json";
-import arrowTop from "/icons/arrow-top.webp";
 
 export default function UPSubjects(props) {
   const [showAllSubjects, setShowAllSubjects] = useState(

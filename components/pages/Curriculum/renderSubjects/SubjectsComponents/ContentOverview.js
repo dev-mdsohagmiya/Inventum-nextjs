@@ -1,15 +1,19 @@
-import { Children } from "react";
-import { Link } from "react-router-dom";
-import { useInView } from "../../../../../hooks/useInView";
+"use client";
+
+import { useInView } from "@/hooks/useInView";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Children, useEffect, useState } from "react";
+
 import Asubjects from "../../Asubjects.json";
 import IGCSEsubjects from "../../IGCSEsubjects.json";
 import ISFsubjects from "../../ISFsubjects.json";
 import ContentOverviewCard from "./ContentOverviewCard";
 function Wrapper({ children }) {
-  var a = window.location.pathname;
-  var b = a.split("/");
+  const pathname = usePathname();
+  const segments = pathname.split("/");
+  const level = segments[segments.length - 2];
   const count = Children.count(children);
-  var level = b.slice(-2, -1).toString();
 
   return (
     <>
@@ -27,76 +31,87 @@ function Wrapper({ children }) {
 }
 
 export default function ContentOverview() {
-  var a = window.location.pathname;
-  var b = a.split("/");
-  var c = b.slice(-1).toString();
-  var JSON = null;
-  var level = b.slice(-2, -1).toString();
-  var levelText = null;
-  switch (b.slice(-2, -1).toString()) {
-    case "igcse":
-      JSON = IGCSEsubjects;
-      levelText = b.slice(-2, -1).toString().toUpperCase();
-      break;
-    case "middleschool":
-      JSON = ISFsubjects;
-      levelText = "Middle School";
-      break;
-    case "a-levels":
-      JSON = Asubjects;
-      levelText =
-        b.slice(-2, -1).toString().charAt(0).toUpperCase() +
-        b.slice(-2, -1).toString().slice(1);
-      break;
-    default:
-      JSON = null;
-  }
+  const pathname = usePathname();
+  const segments = pathname.split("/");
+  const subjectSlug = segments[segments.length - 1];
+  const levelSlug = segments[segments.length - 2];
 
-  const Subject = JSON.find((subject) => subject.name === c);
-  const assessment = Subject.Assessment && Object.values(Subject.Assessment);
-  const content = Subject.Content && Object.values(Subject.Content);
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.4,
-  });
-  const count = Object.keys(content).length;
-  const assessmentcount = Object.keys(assessment).length;
+  const [Subject, setSubject] = useState(null);
+  const [content, setContent] = useState([]);
+  const [assessment, setAssessment] = useState([]);
+  const [levelText, setLevelText] = useState("");
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.4 });
+
+  useEffect(() => {
+    let subjectsJson = null;
+    let readableLevel = "";
+
+    switch (levelSlug) {
+      case "igcse":
+        subjectsJson = IGCSEsubjects;
+        readableLevel = "IGCSE";
+        break;
+      case "middleschool":
+        subjectsJson = ISFsubjects;
+        readableLevel = "Middle School";
+        break;
+      case "a-levels":
+        subjectsJson = Asubjects;
+        readableLevel = levelSlug.charAt(0).toUpperCase() + levelSlug.slice(1);
+        break;
+      default:
+        subjectsJson = null;
+    }
+
+    if (subjectsJson) {
+      const found = subjectsJson.find((s) => s.name === subjectSlug);
+      if (found) {
+        setSubject(found);
+        setContent(Object.values(found.Content || {}));
+        setAssessment(Object.values(found.Assessment || {}));
+        setLevelText(readableLevel);
+      }
+    }
+  }, [pathname]);
+
+  if (!Subject) return null;
 
   return (
     <div className="flex flex-col min-h-screen">
       <div className="mt-20 mb-10 p-10 bg-dd rounded-lg text-ll flex gap-3">
-        <Link to="/">
+        <Link href="/">
           <span className="text-ld hover:text-dl">Home</span>
         </Link>
         <p>{">"}</p>
-        <Link to="/curriculum">
+        <Link href="/curriculum">
           <span className="text-ld hover:text-dl">Curriculum</span>
         </Link>
         <p>{">"}</p>
-        <Link className="text-ll" to={`/${b.slice(-2, -1).toString()}`}>
+        <Link href={`/${levelSlug}`}>
           <span className="text-ld hover:text-dl">{levelText}</span>
         </Link>
         <p>{">"}</p>
-        <Link className="text-ll" to={`/${b.slice(-2, -1).toString()}/${c}`}>
+        <Link href={`/${levelSlug}/${subjectSlug}`}>
           <span className="text-ld hover:text-dl">
-            {c.replaceAll("-", " ")}
+            {subjectSlug.replaceAll("-", " ")}
           </span>
         </Link>
       </div>
+
       <div
         className={
-          level === "middleschool"
+          levelSlug === "middleschool"
             ? "flex lg:flex-row flex-col gap-10"
-            : count === 1
+            : content.length === 1
             ? "flex justify-center mx-auto flex-col lg:flex-row w-full"
             : ""
         }
       >
         <div
           className={
-            level === "middleschool"
+            levelSlug === "middleschool"
               ? "lg:w-1/2 lg:ml-10 lg:mx-auto mx-2"
-              : count === 1
+              : content.length === 1
               ? "lg:w-1/2 justify-center "
               : "md:mx-20 mx-5 xl:mx-52 2xl:mx-56"
           }
@@ -108,75 +123,76 @@ export default function ContentOverview() {
             Content overview
           </h1>
           <Wrapper>
-            {content.map((con, index) => {
-              return (
-                <div
-                  key={index}
-                  className={`text-ll w-full hover:scale-105 mx-auto transition-all duration-100 ease-in-out flex flex-col bg-dd rounded-xl p-5 h-full animatable-${index} ${
-                    inView ? "left" : ""
+            {content.map((con, index) => (
+              <div
+                key={index}
+                className={`text-ll w-full hover:scale-105 mx-auto transition-all duration-100 ease-in-out flex flex-col bg-dd rounded-xl p-5 h-full animatable-${index} ${
+                  inView ? "left" : ""
+                }`}
+              >
+                <h1
+                  className={` flex font-bold dark:text-ld animate ${
+                    inView ? "shown-4" : ""
                   }`}
                 >
-                  <h1
-                    className={` flex font-bold dark:text-ld animate ${
-                      inView ? "shown-4" : ""
-                    }`}
-                  >
-                    {con.title}
-                  </h1>
-                  <ul className="mt-5">
-                    {con.p.split("\n").map((line, index) => (
-                      <li
-                        className={` list-disc ml-4 dark:text-ld animate ${
-                          inView ? `shown-${4 + index}` : ""
-                        }`}
-                        key={index}
-                      >
-                        {line}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              );
-            })}
+                  {con.title}
+                </h1>
+                <ul className="mt-5">
+                  {con.p.split("\n").map((line, index) => (
+                    <li
+                      key={index}
+                      className={` list-disc ml-4 dark:text-ld animate ${
+                        inView ? `shown-${4 + index}` : ""
+                      }`}
+                    >
+                      {line}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </Wrapper>
         </div>
-        <div className={count === 1 ? "lg:w-1/2" : "mx-5 xl:mx-36 2xl:mx-56"}>
+
+        <div
+          className={
+            content.length === 1 ? "lg:w-1/2" : "mx-5 xl:mx-36 2xl:mx-56"
+          }
+        >
           <h1 className="bg-clip-text bg-pg text-transparent font-bold text-4xl text-center py-10 mx-auto">
             Assessment overview
           </h1>
-
           <div
             className={
-              level === "middleschool"
+              levelSlug === "middleschool"
                 ? " mx-2 lg:mx-auto gap-10 flex flex-col  lg:pr-10"
-                : assessmentcount === 1
+                : assessment.length === 1
                 ? "w-max mx-auto"
                 : "grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-5 mx-10"
             }
           >
-            {assessment.map((ass, index) => {
-              return (
-                <ContentOverviewCard
-                  title={ass.title}
-                  time={ass.time}
-                  p={ass.p}
-                  key={index}
-                />
-              );
-            })}
+            {assessment.map((ass, index) => (
+              <ContentOverviewCard
+                key={index}
+                title={ass.title}
+                time={ass.time}
+                p={ass.p}
+              />
+            ))}
           </div>
         </div>
       </div>
-      {level === "middleschool" ? null : (
+
+      {levelSlug !== "middleschool" && Subject?.pdf && (
         <div className="h-max flex items-center justify-center">
-          <Link
-            to={Subject.pdf}
-            target={"_blank"}
+          <a
+            href={Subject.pdf}
+            target="_blank"
             rel="noreferrer"
             className="bg-pg py-2 px-5 rounded-xl m-10 text-ll font-bold active:translate-y-1 hover:scale-[1.025] ease-in-out"
           >
             Learn more about this subject!
-          </Link>
+          </a>
         </div>
       )}
     </div>
