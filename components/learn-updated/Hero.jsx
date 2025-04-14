@@ -31,7 +31,7 @@ const Hero = () => {
 
   return (
     <section className="bg-[#162033]">
-      <div className="container  pt-[10rem] pb-16">
+      <div className="container  pt-[4rem] pb-16">
         <div className="flex relative w-full flex-col lg:flex-row items-center">
           <div className="basis-full lg:basis-1/2 2xl:basis-[45%] space-y-6">
             <div className="inline-flex items-center py-3 px-4 bg-white/10 border-l-[3px] border-white">
@@ -96,7 +96,7 @@ const Hero = () => {
             className="hidden lg:inline-flex backdrop-blur-[24px] overflow-hidden py-5 px-8 rounded-[24px] items-center absolute bottom-0 right-0 z-10 gap-7"
           >
             {STATICS.map((item) => (
-              <div className="space-y-1 text-center">
+              <div key={item.id} className="space-y-1 text-center">
                 <h3 className="text-3xl font-bold text-white">{item.value}</h3>
                 <p className="text-lg text-[#C9C9C9] font-normal">
                   {item.title}

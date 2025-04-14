@@ -90,9 +90,9 @@ export default function FutureReadyMindsets() {
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {visibleModules.map((item) => (
+          {visibleModules.map((item, index) => (
             <MindsetCard
-              key={item.id}
+              key={index * 5454545494}
               title={item.Mindset || item.Course}
               description={item.Text || item.Description}
               image={item.img || item.image}

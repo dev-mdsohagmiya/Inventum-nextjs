@@ -1,3 +1,4 @@
+"use client";
 import arrows from "@/public/icons/arrows.png";
 import book from "@/public/icons/book.png";
 import books from "@/public/icons/books.png";

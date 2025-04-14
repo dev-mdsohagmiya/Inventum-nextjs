@@ -1,5 +1,4 @@
 "use client";
-import arrowTop from "@/public/icons/arrow-top.webp";
 import { useState } from "react";
 import Mindsetjson from "./Mindset.json";
 import TechCards from "./TechCards";
@@ -56,7 +55,7 @@ export default function MindsetGrid(props) {
               alt="arrow"
               className="rotate-180 md:rotate-90 mx-auto w-20 bg-inherit "
               width={"60rem"}
-              src={arrowTop}
+              src={"/icons/arrow-top.webp"}
             ></img>
             <h5 className="mb-2 text-lg font-bold tracking-tight">
               Show All Mindsets
@@ -72,7 +71,7 @@ export default function MindsetGrid(props) {
               alt="arrow"
               className="-rotate-180 md:-rotate-90 brightness-200 mx-auto w-20"
               width={"60rem"}
-              src={arrowTop}
+              src={"/icons/arrow-top.webp"}
             ></img>
             <h5 className="mb-2 text-lg font-bold tracking-tight ">
               Show Less Mindsets

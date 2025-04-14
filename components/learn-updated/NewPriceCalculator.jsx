@@ -78,6 +78,7 @@ Fade.propTypes = {
 };
 
 export default function NewPriceCalculator(props) {
+  const [client, setClient] = useState(false);
   const [selectedLevel, setSelectedLevel] = useState("");
   const [selectedJourney, setSelectedJourney] = useState(0);
   const [selectedSubjects, setSelectedSubjects] = useState([]);
@@ -111,6 +112,10 @@ export default function NewPriceCalculator(props) {
     default:
       JSON = null;
   }
+
+  useEffect(() => {
+    setClient(true);
+  }, []);
   var subjects = [];
   const addonlist = [
     { value: "Tutor", label: "Additional Tutoring" },
@@ -419,6 +424,9 @@ export default function NewPriceCalculator(props) {
     }),
   };
 
+  if (!client) {
+    return null;
+  }
   return (
     <div className="bg-[#1a2235] rounded-lg p-8" id="calculate">
       <h2 className="text-xl text-white font-bold mb-2">Fee Calculator</h2>
