@@ -11,7 +11,7 @@ export default function FAQSection() {
     setOpenItem(openItem === index ? null : index);
   };
 
-  const faq = [
+  const faqs = [
     {
       title: "Are the exams online?",
       text: "All the tests and exams in the Upper Primary (Year 5 & Year 6) and Lower Secondary (Year 7-Year 9) are internal Inventum exams taken online. For the second year of the IGCSE program (Year 11), AS (Year 12), and A-Levels (Year 13), the exams have to be taken in a physical Cambridge exam centre. You can find the list of exam centres worldwide here.",
@@ -80,79 +80,81 @@ export default function FAQSection() {
   ];
 
   return (
-    <div className="container py-14 xl:py-24">
-      <div className="pb-10">
-        <SectionTitle title={"Frequently Asked Questions."} />
-      </div>
-      <div className="max-w-3xl mx-auto">
-        {faq.map((item, index) => (
-          <div
-            key={index}
-            className="mb-4 bg-[#1a2235] overflow-hidden rounded-lg"
-          >
-            <motion.button
-              onClick={() => toggleItem(index)}
-              className="w-full flex justify-between items-center px-5 py-4  text-white text-left rounded-lg"
-              whileTap={{ scale: 0.98 }}
-              transition={{ duration: 0.2 }}
+    <section className="bg-[#0D1526] pt-10 lg:pt-16">
+      <div className="container py-14 xl:py-24">
+        <div className="pb-10">
+          <SectionTitle title={"Frequently Asked Questions."} />
+        </div>
+        <div className="max-w-3xl mx-auto">
+          {faqs.map((item, index) => (
+            <div
+              key={index}
+              className="mb-4 bg-[#162033] overflow-hidden rounded-lg"
             >
-              <span className="text-lg font-medium">{item.title}</span>
-              <motion.div
-                animate={{ rotate: openItem === index ? 180 : 0 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
+              <motion.button
+                onClick={() => toggleItem(index)}
+                className="w-full flex justify-between items-center px-5 py-4  text-white text-left rounded-lg"
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.2 }}
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                >
-                  <path
-                    d="M8.54649 12H23.4532C23.7169 12.0011 23.9743 12.0804 24.193 12.2278C24.4116 12.3752 24.5816 12.5842 24.6815 12.8282C24.7814 13.0722 24.8067 13.3404 24.7542 13.5988C24.7017 13.8573 24.5737 14.0943 24.3865 14.28L16.9465 21.72C16.8225 21.845 16.6751 21.9442 16.5126 22.0119C16.3501 22.0795 16.1758 22.1144 15.9998 22.1144C15.8238 22.1144 15.6495 22.0795 15.4871 22.0119C15.3246 21.9442 15.1771 21.845 15.0532 21.72L7.61316 14.28C7.42593 14.0943 7.29797 13.8573 7.24546 13.5988C7.19294 13.3404 7.21824 13.0722 7.31814 12.8282C7.41804 12.5842 7.58806 12.3752 7.8067 12.2278C8.02535 12.0804 8.2828 12.0011 8.54649 12Z"
-                    fill="white"
-                  />
-                </svg>
-              </motion.div>
-            </motion.button>
-
-            <AnimatePresence>
-              {openItem === index && (
+                <span className="text-lg font-medium">{item.title}</span>
                 <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{
-                    height: "auto",
-                    opacity: 1,
-                    transition: {
-                      height: { duration: 0.3 },
-                      opacity: { duration: 0.3, delay: 0.1 },
-                    },
-                  }}
-                  exit={{
-                    height: 0,
-                    opacity: 0,
-                    transition: {
-                      height: { duration: 0.3 },
-                      opacity: { duration: 0.2 },
-                    },
-                  }}
-                  className=""
+                  animate={{ rotate: openItem === index ? 180 : 0 }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
                 >
-                  <motion.div
-                    initial={{ y: -10 }}
-                    animate={{ y: 0 }}
-                    exit={{ y: -10 }}
-                    transition={{ duration: 0.2 }}
-                    className="px-5 pb-5 text-gray-300"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
                   >
-                    <p>{item.text}</p>
-                  </motion.div>
+                    <path
+                      d="M8.54649 12H23.4532C23.7169 12.0011 23.9743 12.0804 24.193 12.2278C24.4116 12.3752 24.5816 12.5842 24.6815 12.8282C24.7814 13.0722 24.8067 13.3404 24.7542 13.5988C24.7017 13.8573 24.5737 14.0943 24.3865 14.28L16.9465 21.72C16.8225 21.845 16.6751 21.9442 16.5126 22.0119C16.3501 22.0795 16.1758 22.1144 15.9998 22.1144C15.8238 22.1144 15.6495 22.0795 15.4871 22.0119C15.3246 21.9442 15.1771 21.845 15.0532 21.72L7.61316 14.28C7.42593 14.0943 7.29797 13.8573 7.24546 13.5988C7.19294 13.3404 7.21824 13.0722 7.31814 12.8282C7.41804 12.5842 7.58806 12.3752 7.8067 12.2278C8.02535 12.0804 8.2828 12.0011 8.54649 12Z"
+                      fill="white"
+                    />
+                  </svg>
                 </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-        ))}
+              </motion.button>
+
+              <AnimatePresence>
+                {openItem === index && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{
+                      height: "auto",
+                      opacity: 1,
+                      transition: {
+                        height: { duration: 0.3 },
+                        opacity: { duration: 0.3, delay: 0.1 },
+                      },
+                    }}
+                    exit={{
+                      height: 0,
+                      opacity: 0,
+                      transition: {
+                        height: { duration: 0.3 },
+                        opacity: { duration: 0.2 },
+                      },
+                    }}
+                    className=""
+                  >
+                    <motion.div
+                      initial={{ y: -10 }}
+                      animate={{ y: 0 }}
+                      exit={{ y: -10 }}
+                      transition={{ duration: 0.2 }}
+                      className="px-5 pb-5 text-gray-300"
+                    >
+                      <p>{item.text}</p>
+                    </motion.div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

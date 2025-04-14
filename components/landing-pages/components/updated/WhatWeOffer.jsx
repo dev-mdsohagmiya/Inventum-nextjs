@@ -1,28 +1,9 @@
-import CallButton from "@/hooks/CallButton";
+import React from "react";
 import SectionName from "../ui/SectionName";
 import SectionTitle from "../ui/SectionTitle";
 
 const WhatWeOffer = () => {
   const DATA = [
-    {
-      id: 11,
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width={40}
-          height={40}
-          viewBox="0 0 40 40"
-          fill="none"
-        >
-          <path
-            d="M31.6667 3.24835H8.33333C3.73833 3.24835 0 6.98669 0 11.5817V28.2484C0 32.8434 3.73833 36.5817 8.33333 36.5817H19.1667V33.1517C17.9517 31.78 17.1483 30.1167 16.8267 28.3334H10C9.07833 28.3334 8.33333 27.5867 8.33333 26.6667C8.33333 25.7467 9.07833 25 10 25H16.8033C16.995 23.805 17.3917 22.6817 17.9667 21.6667H9.99833C9.07667 21.6667 8.33167 20.92 8.33167 20C8.33167 19.08 9.07667 18.3334 9.99833 18.3334H21.0217C22.63 17.23 24.5717 16.5817 26.665 16.5817C32.18 16.5817 36.665 21.0667 36.665 26.5817C36.665 29.0184 35.77 31.3384 34.165 33.1517V36.155C37.5333 35.085 39.9983 31.965 39.9983 28.2467V11.5817C39.9983 6.98669 36.2617 3.24835 31.6667 3.24835ZM30 15H10C9.07833 15 8.33333 14.2534 8.33333 13.3334C8.33333 12.4134 9.07833 11.6667 10 11.6667H30C30.9217 11.6667 31.6667 12.4134 31.6667 13.3334C31.6667 14.2534 30.9217 15 30 15ZM33.3333 26.6667C33.3333 22.99 30.3433 20 26.6667 20C22.99 20 20 22.99 20 26.6667C20 28.7584 20.9883 30.605 22.5 31.8284V38.9117C22.5 39.95 23.8183 40.395 24.4483 39.57L26.6667 36.665L28.885 39.57C29.515 40.395 30.8333 39.95 30.8333 38.9117V31.8284C32.345 30.605 33.3333 28.7584 33.3333 26.6667Z"
-            fill="white"
-          />
-        </svg>
-      ),
-      title: "Personalised Schooling",
-      des: "Upon joining us, each learner completes a CAT4 test to assess their academic level and learning style, allowing us to create a personalised learning plan.",
-    },
     {
       id: 10,
       icon: (
@@ -43,6 +24,32 @@ const WhatWeOffer = () => {
       des: "Inventum offers a diverse, challenging curriculum with Pearson (Years 5-9), Cambridge IGCSE (Years 10-11), and A-Levels (Years 12-13).",
     },
     {
+      id: 11,
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={40}
+          height={40}
+          viewBox="0 0 40 40"
+          fill="none"
+        >
+          <g clipPath="url(#clip0_42_92)">
+            <path
+              d="M32.5 15.0003C31.7333 15.0003 31.0433 14.5336 30.7583 13.8203L29.3367 10.6353L26.1467 9.14026C25.44 8.84193 24.985 8.14526 25 7.3786C25.015 6.61193 25.495 5.93193 26.2117 5.66026L29.4583 4.43026L30.7583 1.1786C31.0433 0.46693 31.7317 -0.00140381 32.5 -0.00140381C33.2683 -0.00140381 33.9567 0.465263 34.2417 1.1786L35.55 4.45026L38.8217 5.7586C39.5333 6.0436 40.0017 6.73193 40.0017 7.50026C40.0017 8.2686 39.535 8.95693 38.8217 9.24193L35.55 10.5503L34.2417 13.8219C33.9567 14.5336 33.2683 15.0019 32.5 15.0019V15.0003ZM37.77 17.4553C35.7333 18.2969 33.4067 18.5803 30.9767 18.1019C26.4433 17.2086 22.7917 13.5569 21.8983 9.02359C21.42 6.5936 21.7017 4.26693 22.545 2.23026C22.985 1.16526 22.205 0.000262858 21.0533 0.000262858H8.33333C3.73167 0.000262858 0 3.73193 0 8.3336V31.6669C0 36.2686 3.73167 40.0003 8.33333 40.0003H31.6667C36.2683 40.0003 40 36.2686 40 31.6669V18.9469C40 17.7953 38.835 17.0153 37.77 17.4553ZM22.83 31.6669C22.0917 31.6669 21.445 31.1769 21.2433 30.4669L20.1717 26.6669H11.495L10.4233 30.4669C10.2233 31.1769 9.575 31.6669 8.83667 31.6669C7.74667 31.6669 6.95667 30.6269 7.24833 29.5769L12.4 11.0636C12.635 10.0503 13.3017 9.19693 14.23 8.72193C15.1767 8.23526 16.2633 8.20526 17.295 8.6386C18.2733 9.0486 19.0233 10.0003 19.3017 11.1969L24.42 29.5786C24.7117 30.6286 23.9233 31.6686 22.8317 31.6686L22.83 31.6669ZM31.6667 30.0003C31.6667 30.9203 30.92 31.6669 30 31.6669C29.08 31.6669 28.3333 30.9203 28.3333 30.0003V21.8136C28.3333 20.8936 29.08 20.1469 30 20.1469C30.92 20.1469 31.6667 20.8936 31.6667 21.8136V30.0003ZM15.65 11.9419L12.435 23.3336H19.23L16.015 11.9419C15.9667 11.7519 15.6967 11.7519 15.65 11.9419Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_42_92">
+              <rect width={40} height={40} fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      ),
+      title: "Future Technologies",
+      des: "Our cutting-edge modules cover emerging technologies like blockchain, AI, gene editing, and longevity.",
+    },
+    {
       id: 12,
       icon: (
         <svg
@@ -58,8 +65,8 @@ const WhatWeOffer = () => {
           />
         </svg>
       ),
-      title: "Flexible Support",
-      des: "We help you with whatever you want to achieve, maybe you need support to be able to finnish 2 years in 1, or maybe you need extra time to understand a certain key topic.",
+      title: "Well-being",
+      des: "At Inventum, we prioritize well-being, fostering purpose, community, and resilience for personal and academic growth.",
     },
     {
       id: 13,
@@ -84,30 +91,26 @@ const WhatWeOffer = () => {
           </defs>
         </svg>
       ),
-      title: "Technology / Mindset Education",
-      des: "Our cutting-edge technology modules combined with our personal mindset development prepare our students for the world of tomorrow.",
+      title: "Personal / Mindset Education",
+      des: "Inventum empowers learners to develop skills, values, and mindsets for a positive impact and future readiness.",
     },
   ];
 
   return (
-    <section
-      id="whatwedo"
-      className="bg-[#131B2C] py-14 rounded-[50px] lg:py-20"
-    >
+    <section className="bg-[#131B2C] py-14 rounded-[50px] lg:py-20">
       <div className="container">
         <div className="flex mx-auto max-w-[920px] flex-col items-center justify-center gap-4">
           <SectionName>What We Offer</SectionName>
           <SectionTitle
-            title={"Personalised, Flexible & International"}
-            colouredTitle="Education that puts you first."
-            subTitle="Our curriculum blends academic excellence, future technologies and personal mindset development, helping students to gain the knowledge, skills, and mindset needed for success. All that while being flexible and personalised to each student's needs."
+            title={"A Comprehensive Learning Experience"}
+            subTitle="Our curriculum blends academic excellence, future technologies, and personal development, ensuring students gain the knowledge, skills, and mindset needed for success."
           />
         </div>
         <div className="pt-8 lg:pt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {DATA.map((item) => (
             <div
               key={item.id}
-              className="p-[28px] rounded-[32px] bg-gradient-to-b shadow-md from-[#27303c] to-dl flex flex-col gap-y-6"
+              className="p-[28px] rounded-[32px] bg-[#162033] flex flex-col gap-y-10"
             >
               {item.icon}
               <div className="space-y-3">
@@ -121,9 +124,6 @@ const WhatWeOffer = () => {
             </div>
           ))}
         </div>
-      </div>
-      <div className="flex justify-center mt-8">
-        <CallButton />
       </div>
     </section>
   );

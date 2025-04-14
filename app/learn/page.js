@@ -1,11 +1,11 @@
-import ContactForm from "@/components/learn-updated/ContactForm";
-import EmpoweringFutureReadyLearners from "@/components/learn-updated/EmpoweringFutureReadyLearners";
-import FutureReadyMindsets from "@/components/learn-updated/FutureReadyMindsets";
-import Hero from "@/components/learn-updated/Hero";
-import HowWeDifferent from "@/components/learn-updated/HowWeDifferent";
+import ContactForm from "@/components/landing-pages/components/updated/ContactForm";
+import EmpoweringFutureReadyLearners from "@/components/landing-pages/components/updated/EmpoweringFutureReadyLearners";
+import FutureReadyMindsets from "@/components/landing-pages/components/updated/FutureReadyMindsets";
+import Hero from "@/components/landing-pages/components/updated/Hero";
+import HowWeDifferent from "@/components/landing-pages/components/updated/HowWeDifferent";
+import Subject from "@/components/landing-pages/components/updated/Subject";
+import WhatWeOffer from "@/components/landing-pages/components/updated/WhatWeOffer";
 import OurPackagesNew from "@/components/learn-updated/OurPackagesUpdate";
-import Subject from "@/components/learn-updated/Subject";
-import WhatWeOffer from "@/components/learn-updated/WhatWeOffer";
 import CallInline from "@/hooks/CallInline";
 
 export default function Learn() {

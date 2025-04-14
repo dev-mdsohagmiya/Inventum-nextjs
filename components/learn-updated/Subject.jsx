@@ -5,17 +5,48 @@ import TabNavigation from "./TabNavigation";
 
 const subjectsData = {
   middleschool: [
-    { icon: "/icons/book.svg", title: "Digital Literacy", id: "30" },
+    {
+      icon: "/icons/book.svg",
+      title: "Digital Literacy",
+      id: "30",
+      slug: "/learn/middleschool/Digital-Literacy",
+    },
     {
       icon: "/icons/economy.svg",
       title: "Economic Management Sciences",
       id: "31",
+      slug: "/learn/middleschool/Economic-Management-Sciences",
     },
-    { icon: "/icons/ENG.svg", title: "English", id: "32" },
-    { icon: "/icons/Fr.svg", title: "French Beginner", id: "33" },
-    { icon: "/icons/Fr.svg", title: "French Second Language", id: "34" },
-    { icon: "/icons/Globe.svg", title: "Geography", id: "35" },
-    { icon: "/icons/De.svg", title: "German Beginner", id: "36" },
+    {
+      icon: "/icons/ENG.svg",
+      title: "English",
+      id: "32",
+      slug: "/learn/middleschool/English",
+    },
+    {
+      icon: "/icons/Fr.svg",
+      title: "French Beginner",
+      id: "33",
+      slug: "/learn/middleschool/French-Beginner",
+    },
+    {
+      icon: "/icons/Fr.svg",
+      title: "French Second Language",
+      id: "34",
+      slug: "/learn/middleschool/Economic-Management-Sciences",
+    },
+    {
+      icon: "/icons/Globe.svg",
+      title: "Geography",
+      id: "35",
+      slug: "/learn/middleschool/Economic-Management-Sciences",
+    },
+    {
+      icon: "/icons/De.svg",
+      title: "German Beginner",
+      id: "36",
+      slug: "/learn/middleschool/Economic-Management-Sciences",
+    },
   ],
   igcse: [
     { icon: "/icons/book.svg", title: "Accounting", id: "40" },

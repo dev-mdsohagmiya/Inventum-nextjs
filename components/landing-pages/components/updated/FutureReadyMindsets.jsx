@@ -1,6 +1,6 @@
-import Mindsetjson from "@/components/pages/Curriculum/Mindset.json";
-import Techjson from "@/components/pages/Curriculum/Tech.json";
-import CallButton from "@/hooks/CallButton";
+"use client";
+import Mindsetjson from "@/data/curriculum/mindset.json";
+import Techjson from "@/data/curriculum/tech.json";
 import { useEffect, useRef, useState } from "react";
 import SectionTitle from "../ui/SectionTitle";
 import TabNavigation from "./TabNavigation";
@@ -28,7 +28,7 @@ const MindsetCard = ({ title, description, image, imageOrder }) => {
 };
 
 export default function FutureReadyMindsets() {
-  const [activeTab, setActiveTab] = useState("technology");
+  const [activeTab, setActiveTab] = useState("mindset");
   const [showAll, setShowAll] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const sectionRef = useRef(null);
@@ -75,16 +75,13 @@ export default function FutureReadyMindsets() {
     <div
       ref={sectionRef}
       className="bg-g_dark mt-16 xl:mt-24 py-12 px-4 md:px-8"
-      id="ftpm"
     >
       <div className="max-w-6xl mx-auto">
         <SectionTitle
-          title={"Mindset & Future Technologies"}
+          title={"Future-Ready Mindsets & Technologies"}
           subTitle="We empower students with essential skills, knowledge, and values while offering 30+ cutting-edge technology modules, preparing them to thrive in a rapidly evolving world."
         />
-        <div className="flex justify-center mt-8">
-          <CallButton />
-        </div>
+
         <TabNavigation
           activeTab={activeTab}
           setActiveTab={setActiveTab}

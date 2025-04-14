@@ -33,6 +33,7 @@ export default function RootLayout({ children }) {
         <FAQSection />
         <Footer />
       </body>
+      sc
     </html>
   );
 }

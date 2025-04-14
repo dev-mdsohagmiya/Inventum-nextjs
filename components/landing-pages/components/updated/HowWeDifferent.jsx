@@ -1,32 +1,35 @@
-import CallButton from "@/hooks/CallButton";
+"use client";
 import { useState } from "react";
 import SectionName from "../ui/SectionName";
 import SectionTitle from "../ui/SectionTitle";
 const ROWS = [
   "Learning Pace",
-  "Flexibility",
-  "Education Delivery",
+  "Content Delivery",
   "Lesson Accessibility",
-  "Personal Support",
-  "Future Readiness",
+  "Teacher Support",
+  "Knowledge Retention",
+  "Student Engagement",
+  "Exam Preparation",
 ];
 
-const us = [
-  "Personal, based on student progress",
-  "Study anytime, anywhere",
-  "1:1 lessons with flexible formats",
+const Campaign = [
+  "Personalized, based on student progress",
+  "Tailored lessons with flexible formats",
   "Recorded & live lessons for key topics",
-  "1-on-1 Success Coach check-ins",
-  "Technology & Mindset Education",
+  "Regular Study Coach check-ins",
+  "Frequent quizzes to reinforce learning",
+  "Active, self-directed learning",
+  "Ongoing mastery ensures confidence",
 ];
 
-const Competition = [
+const TRADITIONAL_MATCHMAKING_SERVICES = [
   "Fixed for the whole class",
-  "Fixed Schedule, 9am-3pm, 5d/week",
   "One-size-fits-all approach",
   "Live classes only, missed lessons = gaps",
-  "1 teacher for the entire class",
-  "Non-existent or limited",
+  "Generalized instruction",
+  "Focus on covering syllabus, not retention",
+  "Can be passive or disengaging",
+  "Last-minute cramming",
 ];
 
 const HowWeDifferent = () => {
@@ -36,15 +39,11 @@ const HowWeDifferent = () => {
     setVisibleItems((prev) => Math.min(prev + 4, ROWS.length));
   };
   return (
-    <section id="compare" className="py-14 rounded-[50px] lg:py-20">
+    <section className="py-14 rounded-[50px] lg:py-20">
       <div className="container">
         <div className="flex flex-col items-center justify-center gap-4">
           <SectionName>A Smarter Way to Learn</SectionName>
-          <SectionTitle
-            title={"Comparing"}
-            colouredTitle="Inventum"
-            afterTitle="with the alternatives."
-          />
+          <SectionTitle title={"How we different"} />
         </div>
 
         <div className="mx-auto pt-10  relative overflow-hidden">
@@ -76,9 +75,9 @@ const HowWeDifferent = () => {
                   Inventum
                 </p>
               </div>
-              {us.map((item, index) => (
+              {Campaign.map((item, index) => (
                 <div
-                  key={`us-${index}`}
+                  key={`campaign-${index}`}
                   className="p-5 bg-[#fff]/10 rounded-lg  " // Consistent height
                 >
                   <p className="text-sm lg:text-lg xl:text-xl text-white text-left">
@@ -91,10 +90,10 @@ const HowWeDifferent = () => {
             <div className="flex flex-col gap-5 col-span-2">
               <div className="p-5 h-[72px]">
                 <p className="text-center text-xl text-white mt-4 opacity-65 font-medium">
-                  Other (Online) Schools
+                  TRADITIONAL MATCHMAKING SERVICES
                 </p>
               </div>
-              {Competition.map((item, index) => (
+              {TRADITIONAL_MATCHMAKING_SERVICES.map((item, index) => (
                 <div
                   key={`traditional-${index}`}
                   className="p-5 bg-[#fff]/10 rounded-lg  " // Consistent height
@@ -114,21 +113,23 @@ const HowWeDifferent = () => {
                 key={`mobile-${index}`}
                 className="space-y-2 rounded-[8px] p-4 border border-white/20 text-lg"
               >
-                <h6 className="text-xl font-semibold text-white ml-2 opacity-100 uppercase tracking-wider">
+                <h6 className="text-md font-semibold text-white ml-2 opacity-100 uppercase tracking-wider">
                   {row}
                 </h6>
                 <div className="space-y-4">
                   <div className="p-4 rounded-[8px] bg-[#fff]/10">
-                    <span className="block text-base uppercase text-white/60 font-semibold mb-1">
-                      Inventum
+                    <span className="block text-md uppercase text-white/60 font-semibold mb-1">
+                      IVY CAMPAIGN
                     </span>
-                    <p className="text-sm text-white">{us[index]}</p>
+                    <p className="text-sm text-white">{Campaign[index]}</p>
                   </div>
                   <div className="p-4 rounded-[8px] bg-[#fff]/[0.02]">
-                    <span className="block text-base uppercase text-gray-500 font-semibold mb-1">
-                      Other (Online) Schools
+                    <span className="block text-md uppercase text-gray-500 font-semibold mb-1">
+                      TRADITIONAL MATCHMAKING SERVICES
                     </span>
-                    <p className="text-sm text-white">{Competition[index]}</p>
+                    <p className="text-sm text-white">
+                      {TRADITIONAL_MATCHMAKING_SERVICES[index]}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -146,9 +147,6 @@ const HowWeDifferent = () => {
             )}
           </div>
         </div>
-      </div>
-      <div className="flex justify-center mt-8">
-        <CallButton />
       </div>
     </section>
   );

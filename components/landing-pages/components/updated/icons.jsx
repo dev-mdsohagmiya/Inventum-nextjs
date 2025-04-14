@@ -16,11 +16,11 @@ export const CheckCircle = ({ className = "" }) => (
   </svg>
 );
 
-export const ChevronDown = ({ className = "", width, height }) => (
+export const ChevronDown = ({ className = "" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={width ?? "16"}
-    height={height ?? "16"}
+    width="16"
+    height="16"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
