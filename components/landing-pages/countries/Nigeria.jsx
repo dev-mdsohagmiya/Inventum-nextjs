@@ -7,10 +7,7 @@ import Link from "next/link.js";
 import { lazy, useState } from "react";
 import AddOnsNoPrice from "./components/Add-ons-no-price.jsx";
 import Streams from "./components/Streams.jsx";
-const CallButton = lazy(() => import("@/hooks/CallButton.js"));
-const NewPriceCalc = lazy(() =>
-  import("@/components/pages/Pricing/NewPriceCalc.js")
-);
+
 const PT = lazy(() => import("@/components/pages/PrecissionTeaching/PT.jsx"));
 const Mindset = lazy(() => import("../Google-Ads/components/Mindet.js"));
 const FuTe = lazy(() => import("../Google-Ads/components/FuTe.js"));

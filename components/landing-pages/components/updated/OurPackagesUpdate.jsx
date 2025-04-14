@@ -1,5 +1,6 @@
 "use client";
 import { useInView } from "@/hooks/useInView";
+import dynamic from "next/dynamic";
 import React, { useState } from "react";
 import SectionTitle from "../ui/SectionTitle";
 import NewPriceCalculator from "./NewPriceCalculator";
@@ -126,4 +127,4 @@ const OurPackagesNew = () => {
   );
 };
 
-export default OurPackagesNew;
+export default dynamic(() => Promise.resolve(OurPackagesNew), { ssr: false });

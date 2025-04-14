@@ -3,9 +3,9 @@ import EmpoweringFutureReadyLearners from "@/components/landing-pages/components
 import FutureReadyMindsets from "@/components/landing-pages/components/updated/FutureReadyMindsets";
 import Hero from "@/components/landing-pages/components/updated/Hero";
 import HowWeDifferent from "@/components/landing-pages/components/updated/HowWeDifferent";
+import OurPackagesNew from "@/components/landing-pages/components/updated/OurPackagesUpdate";
 import Subject from "@/components/landing-pages/components/updated/Subject";
 import WhatWeOffer from "@/components/landing-pages/components/updated/WhatWeOffer";
-import OurPackagesNew from "@/components/learn-updated/OurPackagesUpdate";
 import CallInline from "@/hooks/CallInline";
 
 export default function Learn() {

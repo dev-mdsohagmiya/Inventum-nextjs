@@ -8,10 +8,6 @@ import { useState } from "react";
 import CallInline from "@/hooks/CallInline";
 import OurPackagesNew from "../learn-updated/OurPackagesUpdate";
 
-const TierCustomTabs = dynamic(
-  () => import("@/components/pages/Pricing/NewTierCustomTabs"),
-  { ssr: false }
-);
 const IGCSESubjects = dynamic(
   () => import("@/components/pages/Curriculum/IGCSESubjects"),
   { ssr: false }
@@ -25,10 +21,7 @@ const ASubjects = dynamic(
   { ssr: false }
 );
 const CallButton = dynamic(() => import("@/hooks/CallButton"), { ssr: false });
-const NewPriceCalc = dynamic(
-  () => import("@/components/pages/Pricing/NewPriceCalc"),
-  { ssr: false }
-);
+
 const PT = dynamic(() => import("@/components/pages/PrecissionTeaching/PT"), {
   ssr: false,
 });

@@ -1,9 +1,10 @@
 "use client";
+import dynamic from "next/dynamic";
 import { useState } from "react";
 import SectionName from "../ui/SectionName";
 import SectionTitle from "../ui/SectionTitle";
 
-export default function ContactForm() {
+function ContactForm() {
   const [formData, setFormData] = useState({
     firstName: "",
     surname: "",
@@ -129,7 +130,7 @@ export default function ContactForm() {
                   </div>
                 </div>
 
-                <div>
+                <div className="relative z-30">
                   <label
                     htmlFor="hearAbout"
                     className="block mb-2 text-sm lg:text-base font-medium"
@@ -138,7 +139,7 @@ export default function ContactForm() {
                   </label>
                   <div className="relative">
                     <div
-                      className="w-full bg-white/10 bg-opacity-100 rounded p-3 text-white flex justify-between items-center cursor-pointer"
+                      className="w-full z-40 bg-white/10 bg-opacity-100 rounded p-3 text-white flex justify-between items-center cursor-pointer"
                       onClick={() => setDropdownOpen(!dropdownOpen)}
                     >
                       <span
@@ -175,7 +176,7 @@ export default function ContactForm() {
                     </div>
 
                     {dropdownOpen && (
-                      <div className="absolute z-10 w-full mt-1 bg-white/10 rounded sha100w-lg">
+                      <div className="absolute z-20 w-full mt-1  bg-black rounded sha100w-lg">
                         {loyaltyOptions.map((option) => (
                           <div
                             key={option}
@@ -193,7 +194,7 @@ export default function ContactForm() {
                   </div>
                 </div>
 
-                <div>
+                <div className="relative z-10">
                   <label
                     htmlFor="message"
                     className="block mb-2 text-sm lg:text-base font-medium"
@@ -227,3 +228,5 @@ export default function ContactForm() {
     </section>
   );
 }
+
+export default dynamic(() => Promise.resolve(ContactForm), { ssr: false });
