@@ -11,7 +11,9 @@ const CallInline = lazy(() => import("@/hooks/CallInline.js"));
 const HowWeDifferent = lazy(() =>
   import("../components/updated/HowWeDifferent.jsx")
 );
-const OurPackages = lazy(() => import("../components/updated/OurPackages.jsx"));
+const OurPackages = lazy(() =>
+  import("../components/updated/OurPackagesUpdate.jsx")
+);
 const Subject = lazy(() => import("../components/updated/Subject.jsx"));
 const WhatWeOffer = lazy(() => import("../components/updated/WhatWeOffer.jsx"));
 const LoadingSpinner = () => (
