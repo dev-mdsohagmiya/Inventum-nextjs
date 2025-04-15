@@ -72,6 +72,7 @@ const Subject = ({ up = [], igcse = [], alevels = [], url }) => {
               return (
                 <Link
                   href={`/${url}/${subject.name}`}
+                  key={subject.name}
                   className="p-4 lg:p-8 rounded-[32px] bg-[#162033] inline-flex items-center gap-6 w-full shadow-md"
                 >
                   <img

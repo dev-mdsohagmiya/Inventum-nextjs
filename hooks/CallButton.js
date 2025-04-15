@@ -31,7 +31,7 @@ export default function CallButton(props) {
     ? `${props.textSize ?? "text-2xl"} ${props.className}`
     : `text-ll ${props.textSize ?? "text-2xl"} ${
         props.className
-      } hover:scale-[1.05] transition-all px-6 py-4 font-medium text-base !rounded-[16px] ease-in-out bg-pg w-max items-center`;
+      } hover:scale-[1.05] cursor-pointer transition-all px-6 py-4 font-medium text-base !rounded-[16px] ease-in-out bg-pg w-max items-center`;
 
   // Only render the PopupButton on the client side
   if (!isClient) {

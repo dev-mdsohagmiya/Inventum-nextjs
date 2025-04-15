@@ -3,23 +3,38 @@ import CallButton from "@/hooks/CallButton.js";
 import CallInline from "@/hooks/CallInline.js";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
-import { lazy, useState } from "react";
-const TierCustomTabs = lazy(() =>
-  import("@/components/pages/Pricing/NewTierCustomTabs.js")
+import dynamic from "next/dynamic";
+import { useState } from "react";
+const TierCustomTabs = dynamic(
+  () => import("@/components/pages/Pricing/NewTierCustomTabs.js"),
+  { ssr: false }
 );
-const IGCSESubjects = lazy(() =>
-  import("@/components/pages/Curriculum/IGCSESubjects")
+const IGCSESubjects = dynamic(
+  () => import("@/components/pages/Curriculum/IGCSESubjects"),
+  { ssr: false }
 );
-const ISFSubjects = lazy(() =>
-  import("@/components/pages/Curriculum/ISFSubjects")
+const ISFSubjects = dynamic(
+  () => import("@/components/pages/Curriculum/ISFSubjects"),
+  { ssr: false }
 );
-const ASubjects = lazy(() => import("@/components/pages/Curriculum/ASubjects"));
-const NewPriceCalc = lazy(() =>
-  import("@/components/pages/Pricing/NewPriceCalc")
+const ASubjects = dynamic(
+  () => import("@/components/pages/Curriculum/ASubjects"),
+  { ssr: false }
 );
-const PT = lazy(() => import("@/components/pages/PrecissionTeaching/PT.jsx"));
-const Mindset = lazy(() => import("./Google-Ads/components/Mindet.js"));
-const FuTe = lazy(() => import("./Google-Ads/components/FuTe.js"));
+const NewPriceCalc = dynamic(
+  () => import("@/components/pages/Pricing/NewPriceCalc"),
+  { ssr: false }
+);
+const PT = dynamic(
+  () => import("@/components/pages/PrecissionTeaching/PT.jsx"),
+  { ssr: false }
+);
+const Mindset = dynamic(() => import("./Google-Ads/components/Mindet.js"), {
+  ssr: false,
+});
+const FuTe = dynamic(() => import("./Google-Ads/components/FuTe.js"), {
+  ssr: false,
+});
 
 library.add(faSpinner);
 
@@ -37,12 +52,10 @@ export default function LandingPage() {
             <h1 className="text-3xl lg:text-5xl text-center text-white font-light">
               An
               <span className="text-transparent bg-pg font-extrabold bg-clip-text">
-                {" "}
                 Online Cambridge School{" "}
               </span>
               where you can{" "}
               <span className="lg:hidden">
-                {" "}
                 study your own way, whenever you want
               </span>
               <div className="hidden lg:flex lg:flex-col lg:justify-center lg:items-center">
@@ -59,8 +72,8 @@ export default function LandingPage() {
                     <path
                       d="M2.23632 3.12645C74.2884 6.40318 146.244 9.52558 218.421 10.9128C354.177 13.5221 489.273 8.04631 624.593 5.67451C689.408 4.53848 754.542 1.49369 819.502 1.95801C825.963 2.00419 833.02 1.82161 822.029 2.2664C799.854 3.16379 777.87 5.85087 755.788 7.23685C657.232 13.4226 558.626 19.6258 460.266 26.566C380.954 32.1622 296.452 35.0563 219.311 47.1844C212.142 48.3115 219.504 48.9838 222.713 49.4434C238.377 51.6872 254.154 52.4087 270.137 52.8991C325.375 54.5936 380.594 55.1058 435.665 53.8217"
                       stroke="url(#paint0_linear_501_53)"
-                      stroke-width="3"
-                      stroke-linecap="round"
+                      strokeWidth="3"
+                      strokeLinecap="round"
                     />
                     <defs>
                       <linearGradient
@@ -71,8 +84,8 @@ export default function LandingPage() {
                         y2="57.2916"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#EC4899" />
-                        <stop offset="1" stop-color="#A855F7" />
+                        <stop stopColor="#EC4899" />
+                        <stop offset="1" stopColor="#A855F7" />
                       </linearGradient>
                     </defs>
                   </svg>
@@ -118,10 +131,10 @@ export default function LandingPage() {
         <h2 className="text-7xl text-center flex self-center py-10 font-bold bg-clip-text text-transparent bg-pg w-max mx-auto">
           Subjects
         </h2>
-        <div class="max-w-2xl mx-auto">
-          <div class={"mb-4 sm:w-max w-screen mx-auto "}>
-            <ul class="flex -mb-px flex-wrap justify-center">
-              <li class="mr-2">
+        <div className="max-w-2xl mx-auto">
+          <div className={"mb-4 sm:w-max w-screen mx-auto "}>
+            <ul className="flex -mb-px flex-wrap justify-center">
+              <li className="mr-2">
                 <button
                   onClick={(e) => {
                     e.preventDefault();
@@ -137,7 +150,7 @@ export default function LandingPage() {
                   Middleschool
                 </button>
               </li>
-              <li class="mr-2">
+              <li className="mr-2">
                 <button
                   onClick={(e) => {
                     e.preventDefault();
@@ -153,7 +166,7 @@ export default function LandingPage() {
                   IGCSE
                 </button>
               </li>
-              <li class="mr-2">
+              <li className="mr-2">
                 <button
                   onClick={(e) => {
                     e.preventDefault();
@@ -268,9 +281,6 @@ export default function LandingPage() {
               loading="lazy"
               width="100%"
               height="100"
-              frameborder="0"
-              marginheight="0"
-              marginwidth="0"
               title="Enquiry Form"
             ></iframe>
           </div>

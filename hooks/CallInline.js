@@ -36,7 +36,7 @@ export default function CallInline(props) {
     <section className="container py-16 xl:py-20">
       {!props.notitle && (
         <SectionTitle
-          className={"max-w-4xl mx-auto"}
+          className={"max-w-4xl  mx-auto"}
           title={"Next Step:"}
           colouredTitle="Schedule a personal discovery call."
           subHeadline="(Free academic assessment included)."

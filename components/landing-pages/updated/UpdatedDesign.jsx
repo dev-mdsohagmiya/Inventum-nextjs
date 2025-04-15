@@ -1,24 +1,18 @@
 "use client";
 
-import { lazy } from "react";
-import Hero from "../components/updated/Hero.jsx";
+import CallInline from "@/hooks/CallInline";
+import ContactForm from "../components/updated/ContactForm";
+import FutureReadyMindsets from "../components/updated/FutureReadyMindsets";
+import Hero from "../components/updated/Hero";
+import HowWeDifferent from "../components/updated/HowWeDifferent";
+import Subject from "../components/updated/Subject";
+import WhatWeOffer from "../components/updated/WhatWeOffer";
 
-const ContactForm = lazy(() => import("../components/updated/ContactForm.jsx"));
-const FutureReadyMindsets = lazy(() =>
-  import("../components/updated/FutureReadyMindsets.jsx")
-);
-const CallInline = lazy(() => import("@/hooks/CallInline.js"));
-const HowWeDifferent = lazy(() =>
-  import("../components/updated/HowWeDifferent.jsx")
-);
-const OurPackages = lazy(() => import("../components/updated/OurPackages.jsx"));
-const Subject = lazy(() => import("../components/updated/Subject.jsx"));
-const WhatWeOffer = lazy(() => import("../components/updated/WhatWeOffer.jsx"));
-const LoadingSpinner = () => (
-  <div className="min-h-[200px] flex items-center justify-center">
-    <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-white"></div>
-  </div>
-);
+// const OurPackages = dynamic(() => import("../components/updated/OurPackages"), {
+//   ssr: false,
+// });
+
+import OurPackages from "../components/updated/OurPackages";
 
 export default function UpdatedDesign() {
   return (
@@ -29,6 +23,7 @@ export default function UpdatedDesign() {
         <div className="lg:max-w-[90vw] mx-auto mt-5">
           <CallInline />
         </div>
+
         <WhatWeOffer />
         <HowWeDifferent />
         <OurPackages />
@@ -57,6 +52,7 @@ export default function UpdatedDesign() {
           ]}
           url="information"
         />
+
         <FutureReadyMindsets />
         <CallInline />
         <ContactForm />
