@@ -156,7 +156,7 @@ export default function Navbar() {
 
   if (!isClient) {
     return (
-      <nav className="py-2.5 bg-dd  sticky w-full z-[999] top-0 left-0 border-b border-gray-600">
+      <nav className="py-2.5 bg-dd  fixed w-full z-[999] top-0 left-0 border-b border-gray-600">
         <div className="container flex flex-wrap justify-between mx-auto">
           <Link href="/">
             <div className="flex items-center gap-2 sm:gap-5">
@@ -170,7 +170,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="py-2.5 bg-dd  sticky w-full z-[999] top-0 left-0 border-b border-gray-600">
+    <nav className="py-2.5 bg-dd  fixed w-full z-[999] top-0 left-0 border-b border-gray-600">
       {isLandingPage ? (
         <div className="container flex flex-wrap justify-between mx-auto">
           <Link href="#home">

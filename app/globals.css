@@ -1,6 +1,12 @@
+@tailwind utilities;
+
 @import "tailwindcss";
 @source "../node_modules/@my-company/ui-lib";
 
+html {
+  @apply scroll-smooth;
+  @apply font-montserrat;
+}
 @config "../tailwind.config.js";
 bullet-point {
   margin-top: 1vh;
@@ -755,18 +761,16 @@ bullet-point {
   margin-left: 2rem;
 }
 
-
-
-.services-card-1:hover{
+.services-card-1:hover {
   height: 24rem;
 }
 
-.services-card-2:hover{
+.services-card-2:hover {
   height: 22rem;
 }
-.services-card-3:hover{
+.services-card-3:hover {
   height: 28rem;
 }
-.services-card-4:hover{
+.services-card-4:hover {
   height: 26rem;
 }

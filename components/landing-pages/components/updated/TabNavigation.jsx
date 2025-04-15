@@ -1,3 +1,5 @@
+import React from "react";
+
 const TabNavigation = ({ activeTab, setActiveTab, tabs, className }) => {
   return (
     <div className={`inline-flex justify-center mt-8 mb-8 ${className}`}>

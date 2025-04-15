@@ -58,6 +58,7 @@ export default function WUGrid() {
       {Object.values(CardText).map((card) => {
         return (
           <GridCard
+            key={card.title}
             title={card.title}
             text={card.text}
             img={card.img}

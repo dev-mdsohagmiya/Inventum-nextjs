@@ -1,84 +1,17 @@
 "use client";
-
-import ASubjects from "@/data/curriculum/asubjects.json";
-import IGCSESubjects from "@/data/curriculum/IGCSEsubjects.json";
-import ISFSubjects from "@/data/curriculum/ISFsubjects.json";
-import { Modal } from "@mui/base/Modal";
-import { Box, styled } from "@mui/system";
-import { animated, useSpring } from "@react-spring/web";
-import PropTypes from "prop-types";
-import * as React from "react";
+import Asubjects from "@/components/pages/Curriculum/Asubjects.json";
+import IGCSEsubjects from "@/components/pages/Curriculum/IGCSEsubjects.json";
+import ISFsubjects from "@/components/pages/Curriculum/ISFsubjects.json";
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
+import { ChevronDown } from "./icons";
 
 const animatedComponents = makeAnimated();
-const BackdropUnstyled = React.forwardRef((props, ref) => {
-  const { open, ...other } = props;
-  return <Fade ref={ref} in={open} {...other} />;
-});
 
-BackdropUnstyled.propTypes = {
-  open: PropTypes.bool.isRequired,
-};
-
-const StyledModal = styled(Modal)`
-  position: fixed;
-  z-index: 1300;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const Backdrop = styled(BackdropUnstyled)`
-  z-index: -1;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-tap-highlight-color: transparent;
-`;
-
-const Fade = React.forwardRef(function Fade(props, ref) {
-  const { in: open, children = <div />, onEnter, onExited, ...other } = props;
-  const style = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: open ? 1 : 0 },
-    onStart: () => {
-      if (open && onEnter) {
-        onEnter(null, true);
-      }
-    },
-    onRest: () => {
-      if (!open && onExited) {
-        onExited(null, true);
-      }
-    },
-  });
-
-  return (
-    <animated.div ref={ref} style={style} {...other}>
-      {children}
-    </animated.div>
-  );
-});
-
-Fade.propTypes = {
-  children: PropTypes.element.isRequired,
-  in: PropTypes.bool,
-  onEnter: PropTypes.func,
-  onExited: PropTypes.func,
-};
-
-export default function NewPriceCalculator(props) {
-  const [client, setClient] = useState(false);
+const FreeCalculator = () => {
   const [selectedLevel, setSelectedLevel] = useState("");
   const [selectedJourney, setSelectedJourney] = useState(0);
   const [selectedSubjects, setSelectedSubjects] = useState([]);
@@ -86,6 +19,7 @@ export default function NewPriceCalculator(props) {
   const [selectedBelgian, setSelectedBelgian] = useState([]);
   const [selectedTutorSessions, setSelectedTutorSessions] = useState([]);
   const [selectedStudyChecks, setSelectedStudyChecks] = useState([]);
+  const [showFees, setShowFees] = useState(false);
   const [selectedPayment, setSelectedPayment] = useState({
     value: 1,
     label: "Pay in full",
@@ -101,21 +35,17 @@ export default function NewPriceCalculator(props) {
   var JSON = null;
   switch (selectedLevel) {
     case "IGCSE":
-      JSON = IGCSESubjects;
+      JSON = IGCSEsubjects;
       break;
     case "Middleschool":
-      JSON = ISFSubjects;
+      JSON = ISFsubjects;
       break;
     case "A-levels":
-      JSON = ASubjects;
+      JSON = Asubjects;
       break;
     default:
       JSON = null;
   }
-
-  useEffect(() => {
-    setClient(true);
-  }, []);
   var subjects = [];
   const addonlist = [
     { value: "Tutor", label: "Additional Tutoring" },
@@ -374,12 +304,11 @@ export default function NewPriceCalculator(props) {
     selectedStudyChecks,
     selectedPayment,
   ]);
-
   const customStyles = {
     control: (provided) => ({
       ...provided,
       width: "100%",
-      height: "60px",
+      height: "100%",
       backgroundColor: "#0f172a", // Dark blue background matching the screenshot
       color: "white",
       border: "1px solid #1e293b",
@@ -388,7 +317,7 @@ export default function NewPriceCalculator(props) {
       "&:hover": {
         border: "1px solid #334155",
       },
-      padding: "0 8px",
+      padding: "8px",
     }),
     singleValue: (provided) => ({
       ...provided,
@@ -423,223 +352,228 @@ export default function NewPriceCalculator(props) {
       padding: "0 16px",
     }),
   };
-
-  if (!client) {
-    return null;
-  }
   return (
-    <div className="bg-[#1a2235] rounded-lg p-8" id="calculate">
-      <h2 className="text-xl text-white font-bold mb-2">Fee Calculator</h2>
-      <p className="text-[#C9C9C9] text-sm mb-6 max-w-3xl">
-        To accurately calculate the annual cost for your chosen courses, we
-        encourage you to utilise the convenient calculator provided below.
-        Kindly be aware that the calculation does not include the one-time
-        registration fee of EUR 250.
-      </p>
-      <div className="flex  flex-col-reverse gap-10  mb-10">
-        <div className="flex flex-col md:flex-row gap-6 w-full bg-[#111827] justify-between md:items-center py-4 rounded-[18px] px-4">
-          <div className="inline-flex items-center gap-2">
-            <h4 className="text-[#B1B1B1] text-xl lg:text-2xl">
-              Total Payment is
-            </h4>
-            <p className="text-3xl text-white font-bold">
-              {(containsAddonTutor(selectedAddons) &&
-                selectedTutorSessions.length === 0) ||
-              (containsAddonStudy(selectedAddons) &&
-                selectedStudyChecks.length === 0) ? (
-                <span className="text-xl">Please specify options</span>
-              ) : selectedPayment.value === 1 ? (
-                <span>
-                  €<CountUp duration={1} end={Price ?? 0} />
-                </span>
-              ) : (
-                <span>
-                  €<CountUp duration={1} end={Price ?? 0} />
-                </span>
-              )}
-            </p>
-          </div>
-          <button className="my-2 my-button">
-            <div
-              onClick={() => apply()}
-              className="bg-g1 text-white px-6 py-3 rounded-md font-medium"
-              target={"_blank"}
-            >
-              Apply now!
-            </div>
+    <div className="bg-[#1a2235] rounded-lg p-8">
+      <div
+        onClick={() => {
+          setShowFees(!showFees);
+        }}
+        className="flex sm:flex-row flex-col items-center"
+      >
+        <div className="cursor-pointer">
+          <h2 className="text-xl text-white font-bold mb-2">Fee Calculator</h2>
+          <p className="text-[#C9C9C9] text-sm mb-6">
+            To accurately calculate the annual cost for your chosen courses, we
+            encourage you to utilise the convenient calculator provided below.
+            Kindly be aware that the calculation does not include the one-time
+            registration fee of EUR 250.
+          </p>
+        </div>
+        <div className="flex flex-row items-center gap-5 ">
+          <p className="text-[#C9C9C9] sm:hidden">Calculate your tuition fee</p>
+          <button className="">
+            <ChevronDown
+              width={"40"}
+              height={"40"}
+              className={` text-ll md:w-40 transition-all ease-in-out duration-300 ${
+                showFees ? "" : "-rotate-90"
+              }`}
+            />
           </button>
         </div>
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 w-full mx-auto">
-          <div className="flex flex-col text-ll ">
-            <label className="text-base font-medium mb-2">Levels</label>
+      </div>
+
+      <div className={`gap-8 ${showFees ? "grid grid-cols-2" : "hidden"}`}>
+        <div>
+          <label className="block text-sm font-medium mb-2 text-white">
+            Levels
+          </label>
+          <Select
+            closeMenuOnSelect
+            components={animatedComponents}
+            options={levels}
+            onChange={handleLevelSelect}
+            isSearchable={false}
+            className="w-full rounded-md appearance-none text-white"
+            styles={customStyles}
+          />
+        </div>
+        {selectedLevel === "Belgian-Package" ? (
+          <div className="text-ll w-full">
+            <label className="block text-sm font-medium mb-2 text-white">
+              Belgian Package items
+            </label>
             <Select
-              closeMenuOnSelect
+              closeMenuOnSelect={false}
               components={animatedComponents}
-              options={levels}
-              onChange={handleLevelSelect}
+              isMulti
+              options={Belgianlist}
+              value={selectedBelgian}
+              captureMenuScroll
               isSearchable={false}
-              className=" text-dl w-full"
+              onChange={handleBelgianSelect}
+              className="w-full rounded-md appearance-none text-white"
               styles={customStyles}
             />
           </div>
-          {selectedLevel === "Belgian-Package" ? (
-            <div className="flex flex-col text-ll">
-              <label className="mb-2 text-base font-medium">
-                Belgian Package items
+        ) : (
+          <>
+            <div className="flex flex-col text-ll my-2">
+              <label className="block text-sm font-medium mb-2 text-white">
+                Journeys
+              </label>
+              <Select
+                closeMenuOnSelect
+                components={animatedComponents}
+                options={journeys}
+                onChange={handleJourneySelect}
+                isSearchable={false}
+                className="w-full rounded-md appearance-none text-white"
+                styles={customStyles}
+              />
+            </div>
+            <div className="flex flex-col text-ll my-2">
+              <label className="block text-sm font-medium mb-2 text-white">
+                Subjects
               </label>
               <Select
                 closeMenuOnSelect={false}
                 components={animatedComponents}
                 isMulti
-                options={Belgianlist}
-                value={selectedBelgian}
+                options={subjects}
+                value={selectedSubjects}
                 captureMenuScroll
                 isSearchable={false}
-                onChange={handleBelgianSelect}
-                className=" text-dl w-full"
+                onChange={handleSubjectSelect}
+                className="w-full rounded-md appearance-none text-white"
                 styles={customStyles}
               />
             </div>
-          ) : (
-            <>
-              <div className="flex flex-col text-ll ">
-                <label className="mb-2 text-base font-medium">Journeys</label>
-                <Select
-                  closeMenuOnSelect
-                  components={animatedComponents}
-                  options={journeys}
-                  onChange={handleJourneySelect}
-                  isSearchable={false}
-                  className=" text-dl w-full"
-                  styles={customStyles}
-                />
-              </div>
-              <div className="flex flex-col text-ll  ">
-                <label className="mb-2 text-base font-medium">Subjects</label>
+            <div className="flex flex-col text-ll my-2">
+              <label className="block text-sm font-medium mb-2 text-white">
+                Payment Term
+              </label>
+              <Select
+                defaultValue={payments[0]}
+                closeMenuOnSelect
+                components={animatedComponents}
+                options={payments}
+                isSearchable={false}
+                onChange={handlePaymentSelect}
+                className="w-full rounded-md appearance-none text-white"
+                styles={customStyles}
+              />
+            </div>
+            <div className="flex flex-col text-ll my-2">
+              <label className="block text-sm font-medium mb-2 text-white">
+                Extra add-ons
+              </label>
+              {selectedJourney === 3 ? (
                 <Select
                   closeMenuOnSelect={false}
                   components={animatedComponents}
                   isMulti
-                  options={subjects}
-                  value={selectedSubjects}
+                  options={addonlistjourneythree}
+                  value={selectedAddons}
                   captureMenuScroll
                   isSearchable={false}
-                  onChange={handleSubjectSelect}
-                  className=" text-dl w-full"
+                  onChange={handleAddonsSelect}
+                  className="w-full rounded-md appearance-none text-white"
                   styles={customStyles}
                 />
-              </div>
-              <div className="flex flex-col text-ll">
-                <label className="mb-2 text-base font-medium">
-                  Payment Term
-                </label>
+              ) : (
                 <Select
-                  defaultValue={payments[0]}
-                  closeMenuOnSelect
+                  closeMenuOnSelect={false}
                   components={animatedComponents}
-                  options={payments}
+                  isMulti
+                  options={addonlist}
+                  value={selectedAddons}
+                  captureMenuScroll
                   isSearchable={false}
-                  onChange={handlePaymentSelect}
-                  className=" text-dl w-full"
+                  onChange={handleAddonsSelect}
+                  className="w-full rounded-md appearance-none text-white"
                   styles={customStyles}
                 />
-              </div>
-              <div className="flex flex-col text-ll ">
-                <label>Extra add-ons</label>
-                {selectedJourney === 3 ? (
+              )}
+            </div>
+            <div>
+              {containsAddonTutor(selectedAddons) ? (
+                <div className="mb-2">
+                  <label className="block text-sm font-medium mb-2 text-white">
+                    Tutoring sessions
+                  </label>
                   <Select
                     closeMenuOnSelect={false}
                     components={animatedComponents}
-                    isMulti
-                    options={addonlistjourneythree}
-                    value={selectedAddons}
+                    options={TutorSessions}
+                    value={selectedTutorSessions}
                     captureMenuScroll
                     isSearchable={false}
-                    onChange={handleAddonsSelect}
-                    className=" text-dl w-full"
+                    onChange={handleTutorSelect}
+                    className="w-full rounded-md appearance-none text-white"
                     styles={customStyles}
                   />
-                ) : (
+                </div>
+              ) : (
+                <></>
+              )}
+              {containsAddonStudy(selectedAddons) ? (
+                <div className="mb-2">
+                  <label className="block text-sm font-medium mb-2 text-white">
+                    Study Coach Check-Ins
+                  </label>
                   <Select
                     closeMenuOnSelect={false}
                     components={animatedComponents}
-                    isMulti
-                    options={addonlist}
-                    value={selectedAddons}
+                    options={StudyChecks}
+                    value={selectedStudyChecks}
                     captureMenuScroll
                     isSearchable={false}
-                    onChange={handleAddonsSelect}
-                    className=" text-dl w-full"
+                    onChange={handleStudySelect}
+                    className="w-full rounded-md appearance-none text-white"
                     styles={customStyles}
                   />
-                )}
-              </div>
-              <div>
-                {containsAddonTutor(selectedAddons) ? (
-                  <div className="mb-2">
-                    <label>Tutoring sessions</label>
-                    <Select
-                      closeMenuOnSelect={false}
-                      components={animatedComponents}
-                      options={TutorSessions}
-                      value={selectedTutorSessions}
-                      captureMenuScroll
-                      isSearchable={false}
-                      onChange={handleTutorSelect}
-                      className=" text-dl w-full"
-                      styles={customStyles}
-                    />
-                  </div>
-                ) : (
-                  <></>
-                )}
-                {containsAddonStudy(selectedAddons) ? (
-                  <div className="mb-2">
-                    <label>Study Coach Check-Ins</label>
-                    <Select
-                      closeMenuOnSelect={false}
-                      components={animatedComponents}
-                      options={StudyChecks}
-                      value={selectedStudyChecks}
-                      captureMenuScroll
-                      isSearchable={false}
-                      onChange={handleStudySelect}
-                      className=" text-dl w-full"
-                      styles={customStyles}
-                    />
-                  </div>
-                ) : (
-                  <></>
-                )}
-              </div>
-            </>
-          )}
-        </div>
+                </div>
+              ) : (
+                <></>
+              )}
+            </div>
+          </>
+        )}
       </div>
 
-      <StyledModal
-        id="1"
-        closeAfterTransition
-        slots={{ backdrop: Backdrop }}
-        open={modal1IsOpen}
-        onClose={() => {
-          setModal1IsOpen(false);
-        }}
-        className={` overflow-y-auto`}
+      <div
+        className={`flex flex-col md:flex-row gap-6 w-full bg-[#111827] justify-between md:items-center mt-8 py-4 rounded-[18px] px-4 ${
+          showFees ? "" : "hidden"
+        }`}
       >
-        <Fade in={modal1IsOpen}>
-          <Box className="flex justify-center items-center">
-            <div className="h-[80vh] md:h-[100vh] md:w-[70vw] w-[99vw]">
-              <iframe
-                className=""
-                src="https://tally.so/embed/mZoMlB?hideTitle=1&dynamicHeight=1"
-                width={"100%"}
-                title="Admissions Form"
-              ></iframe>
-            </div>
-          </Box>
-        </Fade>
-      </StyledModal>
+        <div>
+          <span className="text-[#B1B1B1] text-xl lg:text-2xl">
+            Total Payment Is:
+          </span>
+          <span className="text-3xl text-white font-bold ml-3">
+            {(containsAddonTutor(selectedAddons) &&
+              selectedTutorSessions.length === 0) ||
+            (containsAddonStudy(selectedAddons) &&
+              selectedStudyChecks.length === 0) ? (
+              <span className="text-xl">Please specify options</span>
+            ) : selectedPayment.value === 1 ? (
+              <span>
+                €<CountUp duration={1} end={Price ?? 0} />
+              </span>
+            ) : (
+              <span>
+                €<CountUp duration={1} end={Price ?? 0} />
+              </span>
+            )}
+          </span>
+        </div>
+        <button className="bg-g1 text-white px-6 py-3 rounded-md font-medium">
+          Apply Now
+        </button>
+      </div>
     </div>
   );
-}
+};
+
+export default dynamic(() => Promise.resolve(FreeCalculator), { ssr: false });

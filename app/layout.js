@@ -1,6 +1,6 @@
 import FAQSection from "@/components/ui/FAQSection";
 
-import Footer from "@/components/ui/Footer";
+import Footer from "@/components/landing-pages/components/updated/Footer";
 import Navbar from "@/components/ui/Navbar";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./animate.min.css";
