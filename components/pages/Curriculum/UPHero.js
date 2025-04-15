@@ -1,14 +1,20 @@
+import Image from "next/image";
+
 export default function UPHero() {
   return (
     <div className="lg:bg-none lg:bg-dl bg-cover bg-right-center-half bg-[url(https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/website%2Fupper-primary.webp?alt=media&token=0723afc6-8c5e-4778-9ff9-818591cb1c55)] ">
       <div className="flex lg:flex-row-reverse flex-col items-center w-full lg:pl-5  ">
-        <img
-          className="ovalcut lg:brightness-100 lg:w-1/3 lg:h-screen h-0 object-cover object-right-center-half "
-          src={
-            "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/website%2Fupper-primary.webp?alt=media&token=0723afc6-8c5e-4778-9ff9-818591cb1c55"
-          }
-          alt=""
-        />
+        <div className="pt-20 overflow-clip ovalcut lg:brightness-100 lg:w-1/3 lg:h-screen h-0 object-cover object-right relative">
+          <Image
+            src={
+              "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/website%2Fupper-primary.webp?alt=media&token=0723afc6-8c5e-4778-9ff9-818591cb1c55"
+            }
+            alt="Curriculum Landing"
+            fill
+            className="object-cover object-left-center"
+            priority
+          />
+        </div>
         <div className="w-full h-full text-center  lg:mx-10 overflow-y-auto overflow-x-clip backdrop-brightness-50 lg:backdrop-brightness-100">
           <h1 className="pt-28 text-6xl py-10 font-bold bg-clip-text text-transparent bg-pg">
             Our Curriculum for Upper Primary

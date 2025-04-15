@@ -2,6 +2,7 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 
 library.add(faUpRightFromSquare);
 export default function Curriculum() {
@@ -9,13 +10,17 @@ export default function Curriculum() {
     <div className="bg-dl">
       <div className="lg:bg-none lg:bg-dl bg-cover bg-left bg-[url(https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/website%2FCurriculumlanding.webp?alt=media&token=830c590a-4070-435d-a258-8f1f27087b10&_gl=1*33woxv*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTExNDcuMTMuMC4w)] ">
         <div className="flex lg:flex-row-reverse flex-col items-center w-full lg:pl-5  ">
-          <img
-            className="ovalcut lg:brightness-100 lg:w-1/3 lg:h-screen h-0 object-cover object-left-center "
-            src={
-              "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/website%2FCurriculumlanding.webp?alt=media&token=830c590a-4070-435d-a258-8f1f27087b10&_gl=1*33woxv*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTExNDcuMTMuMC4w"
-            }
-            alt=""
-          />
+          <div className="ovalcut lg:brightness-100 lg:w-1/3 lg:h-screen h-0 relative hidden lg:block object-right-center-half overflow-hidden">
+            <Image
+              src={
+                "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/website%2FCurriculumlanding.webp?alt=media&token=830c590a-4070-435d-a258-8f1f27087b10&_gl=1*33woxv*_ga*MTc0OTc0OTAxLjE2NzQyOTQxMzY.*_ga_CW55HF8NVT*MTY5ODQ4OTcyNS41NC4xLjE2OTg0OTExNDcuMTMuMC4w"
+              }
+              alt="Curriculum Landing"
+              fill
+              className="object-cover object-left-center"
+              priority
+            />
+          </div>
           <div className="w-full text-center lg:mx-10 backdrop-brightness-50 lg:backdrop-brightness-100">
             <h1 className="pt-24 text-5xl md:text-7xl py-10 font-bold bg-clip-text text-transparent bg-pg">
               Our Curriculum

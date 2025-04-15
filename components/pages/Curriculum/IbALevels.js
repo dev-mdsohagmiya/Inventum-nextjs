@@ -6,6 +6,7 @@ import exam from "@/public/icons/exam.png";
 import international from "@/public/icons/international.png";
 import practice from "@/public/icons/practice.png";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import GridCard from "../WhyUs/GridCard";
 
 export default function IbALevels() {
@@ -14,13 +15,24 @@ export default function IbALevels() {
       <header className=" text-white text-center py-6">
         <div className={`lg:bg-none h-full bg-dl`}>
           <div className="flex lg:flex-row-reverse flex-col items-center w-full lg:pl-5 h-full ">
-            <img
+            {/* <img
               className="pt-20 overflow-clip ovalcut lg:brightness-100 lg:w-1/3 lg:h-screen h-0 object-cover object-right"
               src={
                 "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/website%2Fcam-vs-ib.webp?alt=media&token=8c9203db-d949-4b52-96f1-dc908ff81a40"
               }
               alt=""
-            />
+            /> */}
+            <div className="pt-20 overflow-clip ovalcut lg:brightness-100 lg:w-1/3 lg:h-screen h-0 object-cover object-right relative">
+              <Image
+                src={
+                  "https://firebasestorage.googleapis.com/v0/b/inventum-98847.appspot.com/o/website%2Fcam-vs-ib.webp?alt=media&token=8c9203db-d949-4b52-96f1-dc908ff81a40"
+                }
+                alt="Curriculum Landing"
+                fill
+                className="object-cover object-left-center"
+                priority
+              />
+            </div>
             <div className="w-full text-center h-full lg:mx-10 overflow-x-clip">
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -32,9 +44,9 @@ export default function IbALevels() {
               </motion.h1>
               <div className="p-5 text-center text-gray-200 text-lg">
                 <br></br>
-                <div className="rounded-xl my-6 bg-pg p-[0.1rem]">
-                  <div className="flex flex-col justify-between h-full bg-transparent text-transparent rounded-lg"></div>
-                </div>
+                <span className="rounded-xl my-6 bg-pg p-[0.1rem]">
+                  <span className="flex flex-col justify-between h-full bg-transparent text-transparent rounded-lg"></span>
+                </span>
               </div>
 
               <motion.p

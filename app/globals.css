@@ -7,6 +7,10 @@ html {
   @apply scroll-smooth;
   @apply font-montserrat;
 }
+
+button {
+  cursor: pointer;
+}
 @config "../tailwind.config.js";
 bullet-point {
   margin-top: 1vh;

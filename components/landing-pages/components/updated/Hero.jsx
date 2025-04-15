@@ -1,4 +1,5 @@
 import CallButton from "@/hooks/CallButton";
+import Image from "next/image";
 import Link from "next/link";
 import CountUp from "react-countup";
 
@@ -46,7 +47,7 @@ const Hero = () => {
               A school that adapts to your schedule & lifestyle.
             </h2>
             <Link href="#whatwedo">
-              <p className="text-[#C9C9C9] pb-6 text-base xl:text-lg font-normal mt-4">
+              <p className="text-[#C9C9C9] pb-5 lg:pb-6 text-base xl:text-lg font-normal mt-4">
                 <span className="font-bold text-white">
                   Everyone is different, so why is their education the same?
                 </span>{" "}
@@ -90,9 +91,11 @@ const Hero = () => {
             </ul>
           </div>
           <div className="basis-full 2xl:flex-1 flex justify-center lg:justify-end  lg:basis-1/2 2xl:basis-[55%]">
-            <img
+            <Image
               src="/images/landing/hero.png"
               alt="hero landing"
+              width={600}
+              height={730}
               className="w-full max-w-xl relative z-0 2xl:max-w-2xl block  object-cover"
             />
           </div>

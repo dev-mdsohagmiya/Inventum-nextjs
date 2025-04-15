@@ -1,4 +1,3 @@
-"use client";
 import TechGrid from "./TechGrid";
 import WbEp from "./WbEp";
 

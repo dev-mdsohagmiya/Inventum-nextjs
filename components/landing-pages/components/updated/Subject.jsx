@@ -9,6 +9,7 @@ import IGCSESubjects from "@/components/pages/Curriculum/IGCSEsubjects.json";
 import ISFSubjects from "@/components/pages/Curriculum/ISFsubjects.json";
 
 import CallButton from "@/hooks/CallButton";
+import Image from "next/image";
 import Link from "next/link";
 
 const Subject = ({ up = [], igcse = [], alevels = [], url }) => {
@@ -75,11 +76,16 @@ const Subject = ({ up = [], igcse = [], alevels = [], url }) => {
                   key={subject.name}
                   className="p-4 lg:p-8 rounded-[32px] bg-[#162033] inline-flex items-center gap-6 w-full shadow-md"
                 >
-                  <img
-                    src={"/icons/book.svg"}
-                    alt={subject.name}
-                    className="w-5 lg:w-6"
-                  />
+                  <div className="w-5 h-6 relative">
+                    <Image
+                      fill
+                      priority
+                      objectFit="contain"
+                      src={"/icons/book.svg"}
+                      alt={subject.name}
+                      className="w-5 lg:w-6"
+                    />
+                  </div>
                   <span className="text-base lg:text-2xl font-medium text-white">
                     {name}
                   </span>
@@ -96,11 +102,16 @@ const Subject = ({ up = [], igcse = [], alevels = [], url }) => {
                   href={`/${url}/${activeTab}/${subject.name}`}
                   className="p-4 lg:p-8 rounded-[32px] bg-[#162033] inline-flex items-center gap-6 shadow-md"
                 >
-                  <img
-                    src={"/icons/book.svg"}
-                    alt={subject.name}
-                    className="w-5 lg:w-6"
-                  />
+                  <div className="w-5 h-6 relative">
+                    <Image
+                      fill
+                      priority
+                      objectFit="contain"
+                      src={"/icons/book.svg"}
+                      alt={subject.name}
+                      className="w-5 lg:w-6"
+                    />
+                  </div>
                   <span className="text-base lg:text-2xl font-medium text-white">
                     {name}
                   </span>

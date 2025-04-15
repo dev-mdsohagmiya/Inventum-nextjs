@@ -2,6 +2,7 @@
 import Mindsetjson from "@/components/pages/Curriculum/Mindset.json";
 import Techjson from "@/components/pages/Curriculum/Tech.json";
 import CallButton from "@/hooks/CallButton";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import SectionTitle from "../ui/SectionTitle";
 import TabNavigation from "./TabNavigation";
@@ -16,7 +17,9 @@ const MindsetCard = ({ title, description, image, imageOrder }) => {
         <p className="text-[#C9C9C9] xl:text-lg text-sm">{description}</p>
       </div>
       <div className={`${imageOrder}`}>
-        <img
+        <Image
+          width={272}
+          height={400}
           src={image || "/placeholder.svg"}
           srcSet={`${image}?w=500 500w, ${image}?w=1000 1000w, ${image}?w=1500 1500w`}
           sizes="(max-width: 600px) 500px, (max-width: 1200px) 1000px, 1500px"
@@ -108,7 +111,7 @@ export default function FutureReadyMindsets() {
         <div className="flex justify-center mt-8">
           <button
             onClick={handleToggleShowAll}
-            className="bg-transparent border border-gray-600 lg:text-base text-white rounded-[12px] px-6 py-3 text-sm hover:bg-gray-800 transition-colors"
+            className="bg-transparent border cursor-pointer border-gray-600 lg:text-base text-white rounded-[12px] px-6 py-3 text-sm hover:bg-gray-800 transition-colors"
           >
             {showAll ? "Show Less" : "View All Modules"}
           </button>
